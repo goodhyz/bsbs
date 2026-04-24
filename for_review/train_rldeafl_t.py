@@ -7,7 +7,7 @@ config = {
     'train_problem': 'bbob-10D',
     'train_difficulty': 'difficult',
     'train_batch_size': 4,
-    'train_parallel_mode': 'subproc',
+    'train_parallel_mode': 'dummy',
     'device': 'cuda',
     'end_mode': 'epoch',
     'max_epoch': 20,
