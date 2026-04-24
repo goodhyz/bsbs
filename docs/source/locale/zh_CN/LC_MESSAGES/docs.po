@@ -1,0 +1,2071 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, MetaEvo
+# This file is distributed under the same license as the MetaBox package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaBox\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-25 15:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/guide/DS_BL/BBOB-Surrogate.md:1
+msgid "BBOB-Surrogate"
+msgstr "BBOB-Surrogate"
+
+#: ../../source/guide/DS_BL/BBOB-Surrogate.md:3
+msgid ""
+"bbob-surrogate includes 72 problem instances, each of which is a surrogate "
+"model. In specific, it can be divided into 3 subsets: bbob-surrogate-2D, "
+"bbob-surrogate-5D and bbob-surrogate-10D, each of which corresponds to 24 "
+"bbob problems. We first train KAN or MLP networks to fit 24 black box "
+"functions from bbob, then use the one with more accuracy as the surrogate "
+"model. This set is mainly developed for users who aims at exploring the "
+"potential of surrogate model in MetaBBO."
+msgstr ""
+"bbob-surrogate 包含 72 个问题实例，每个实例都是一个代理模型。具体来说，它可以分为 3 个子集：bbob-"
+"surrogate-2D、bbob-surrogate-5D 和 bbob-surrogate-10D，每个子集对应 24 个 bbob "
+"问题。我们首先训练 KAN 或 MLP 网络来拟合 bbob 中的 24 "
+"个黑盒函数，然后使用准确度更高的那个作为代理模型。这个集合主要开发给旨在探索代理模型在 MetaBBO 中潜力的用户。"
+
+#: ../../source/guide/DS_BL/BBOB-Surrogate.md:5
+msgid ""
+"**Paper**：\\ \"[Surrogate Learning in Meta-Black-Box Optimization: A "
+"Preliminary Study](https://arxiv.org/abs/2503.18060).\" arXiv preprint "
+"arXiv:2503.18060 (2025)."
+msgstr ""
+"**论文**：\\\"[Surrogate Learning in Meta-Black-Box Optimization: A "
+"Preliminary Study](https://arxiv.org/abs/2503.18060).\" arXiv preprint "
+"arXiv:2503.18060 (2025)."
+
+#: ../../source/guide/DS_BL/BBOB-Surrogate.md:7
+msgid ""
+"**Code Resource**： [BBOB-Surrogate](https://github.com/GMC-DRL/Surr-RLDE)"
+msgstr "**代码资源**： [BBOB-Surrogate](https://github.com/GMC-DRL/Surr-RLDE)"
+
+#: ../../source/guide/DS_BL/Baselines.md:1
+msgid "Baselines"
+msgstr "基线"
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:1
+msgid "CEC2013LSGO"
+msgstr "CEC2013LSGO"
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:3
+msgid ""
+"CEC2013LSGO proposes 15 large-scale benchmark problems to represent a wider "
+"range of realworld large-scale optimization problems."
+msgstr "CEC2013LSGO 提出了 15 个大规模基线问题，以代表更广泛的实际大规模优化问题。"
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:4
+msgid ""
+"**paper**：\\ \"[Benchmark functions for the CEC 2013 special session and "
+"competition on large-scale global optimization](https://al-"
+"roomi.org/multimedia/CEC_Database/CEC2015/LargeScaleGlobalOptimization/CEC2015_LargeScaleGO_TechnicalReport.pdf).\""
+" gene 7.33 (2013): 8."
+msgstr ""
+"**论文**：\\\"[Benchmark functions for the CEC 2013 special session and "
+"competition on large-scale global optimization](https://al-"
+"roomi.org/multimedia/CEC_Database/CEC2015/LargeScaleGlobalOptimization/CEC2015_LargeScaleGO_TechnicalReport.pdf).\""
+" gene 7.33 (2013): 8."
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:6
+msgid ""
+"**Code Resource**： [CEC2013LSGO](https://github.com/dmolina/cec2013lsgo)"
+msgstr "**代码资源**： [CEC2013LSGO](https://github.com/dmolina/cec2013lsgo)"
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:7
+msgid ""
+"**Problem Suite Composition**：\\ CEC2013LSGO contains four major categories "
+"of large-scale problems:"
+msgstr "**问题集组成**： CEC2013LSGO 包含四个主要类别的大规模问题："
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:9
+msgid "Fully-separable functions (F1-F3)"
+msgstr "完全可分离函数（F1-F3）"
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:10
+msgid "Two types of partially separable functions:"
+msgstr "两种部分可分离函数："
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:11
+msgid ""
+"Partially separable functions with a set of non-separable subcomponents and "
+"one fully-separable subcomponents (F4-F7)"
+msgstr "具有一组不可分离子组件和一个完全可分离子组件的部分可分离函数（F4-F7）"
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:12
+msgid ""
+"Partially separable functions with only a set of non-separable subcomponents"
+" and no fullyseparable subcomponent (F8-F11)"
+msgstr "具有仅包含一组不可分离子组件且不包含完全可分离子组件的部分可分离函数（F8-F11）"
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:13
+msgid "Two types of overlapping functions:"
+msgstr "两种重叠函数："
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:14
+msgid "Overlapping functions with conforming subcomponents (F12-F13)"
+msgstr "具有符合子组件的重叠函数（F12-F13）"
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:15
+msgid "Overlapping functions with conflicting subcomponents (F14)"
+msgstr "存在具有冲突子组件的重叠函数（F14）"
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:16
+msgid "Fully-nonseparable functions (F15)"
+msgstr "完全非可分离函数（F15）"
+
+#: ../../source/guide/DS_BL/CEC2013LSGO.md:18
+msgid ""
+"Except for F13 and F14, which are 905-dimensional, the dimensions of other "
+"problems are 1000."
+msgstr "除了 F13 和 F14 是 905 维的，其他问题的维度都是 1000。"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:1
+msgid "CEC2013MMO"
+msgstr "CEC2013MMO"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:2
+msgid ""
+"CEC2013MMO is based on CEC2013LSGO benchmark and specially crafeted for "
+"multi-modal optimization, which includes 20 synthetic problem instances "
+"covering various dimensions (1D~20D), each with varied number of (1 ~ 216) "
+"global optima. Among them, F1 to F5 are simple uni-modal functions, F6 to "
+"F10 are dimension-scalable functions with multiple global optima, and F11 to"
+" F20 are complex composition functions with challenging landscapes."
+msgstr ""
+"CEC2013MMO 基于 CEC2013LSGO 基线，专门为多模态优化而设计，包含 20 "
+"个合成问题实例，涵盖各种维度（1D~20D），每个实例具有不同数量的全局最优解（1 ~ 216）。其中，F1 到 F5 是简单的单模态函数，F6 到 "
+"F10 是具有多个全局最优解的维度可扩展函数，F11 到 F20 是具有挑战性景观的复杂组合函数。"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:4
+msgid ""
+"Paper：\"[Benchmark functions for CEC’2013 special session and competition on"
+" niching methods for multimodal function "
+"optimization.](https://web.xidian.edu.cn/xlwang/files/20150312_175833.pdf)\""
+" RMIT University, evolutionary computation and machine learning Group, "
+"Australia, Tech. Rep (2013)."
+msgstr ""
+"论文：\\\"[Benchmark functions for CEC’2013 special session and competition on"
+" niching methods for multimodal function "
+"optimization.](https://web.xidian.edu.cn/xlwang/files/20150312_175833.pdf)\""
+" RMIT University, evolutionary computation and machine learning Group, "
+"Australia, Tech. Rep (2013)."
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:5
+msgid "Code Resource： [CEC2013MMO](https://github.com/mikeagn/CEC2013)"
+msgstr "代码资源：[CEC2013MMO](https://github.com/mikeagn/CEC2013)"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:7
+msgid "Characteristics"
+msgstr "特性"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:9
+msgid ""
+"Original tasks are maximization; **converted to minimization** via sign "
+"flip."
+msgstr "原始任务为最大化；通过符号翻转将其**转换为最小化**。"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:10
+msgid "Covers 1D to 20D settings with varying numbers of optima."
+msgstr "涵盖1D到20D的设置，具有不同数量的最优解。"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:12
+msgid "Function Summary"
+msgstr "函数摘要"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:101
+msgid "Dataset Setup"
+msgstr "数据集设置"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:103
+msgid ""
+"The parameter settings used for each problem are as follows. **Note again** "
+"that here we reformulate the origin problems as minimization problems in the"
+" dataset setting by applying negative signs to the evaluation results of the"
+" original functions."
+msgstr ""
+"每个问题使用的参数设置如下。**再次注意**，在这里我们将原始问题重新表述为数据集中以最小化为目标的优化问题，通过在原始函数的评估结果上应用负号来实现。"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:259
+msgid "Evaluation Metrics"
+msgstr "评估指标"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:261
+#, python-format
+msgid "**Peak Ratio (PR)**: Measures average % of known optima found."
+msgstr "**峰比（PR）**: 衡量已知最优解找到的平均百分比。"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:262
+#, python-format
+msgid "**Success Rate (SR)**: % of runs that find *all* global optima."
+msgstr "**成功率（SR）**：找到所有全局最优解的运行次数的百分比。"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:263
+msgid "Both metrics use ε = 1e-4 as the primary accuracy threshold."
+msgstr "两种指标都使用 ε = 1e-4 作为主要准确度阈值。"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:265
+msgid "Max Function Evaluations (MaxFEs)"
+msgstr "最大函数评估次数 (MaxFEs)"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:290
+msgid "Train-Test Split"
+msgstr "训练-测试分割"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:292
+msgid "Based on difficulty from empirical studies:"
+msgstr "根据实证研究中的难度："
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:294
+msgid "**Easy Problems**: P1–P7, P10–P12"
+msgstr "**简单问题**：P1–P7，P10–P12"
+
+#: ../../source/guide/DS_BL/CEC2013MMO.md:295
+msgid "**Difficult Problems**: P8–P9, P13–P20"
+msgstr "**困难问题**: P8–P9, P13–P20"
+
+#: ../../source/guide/DS_BL/CEC2017MTO.md:1
+msgid "CEC2017MTO"
+msgstr "CEC2017MTO"
+
+#: ../../source/guide/DS_BL/CEC2017MTO.md:3
+msgid ""
+"CEC2017MTO comprises 9 multi-task problem instances, each of which contains "
+"two basic problems. Optional basic problems include Shpere, Rosenbrock, "
+"Ackley, Rastrigin, Griewank, Weierstrass and Schwefel, with dimension "
+"ranging from 25D~50D."
+msgstr ""
+"CEC2017MTO 包含 9 个多任务问题实例，每个实例包含两个基本问题。可选的基本问题包括 "
+"Sphere、Rosenbrock、Ackley、Rastrigin、Griewank、Weierstrass 和 Schwefel，维度范围从 "
+"25D~50D。"
+
+#: ../../source/guide/DS_BL/CEC2017MTO.md:5
+msgid ""
+"Paper：\"[Evolutionary multitasking for single-objective continuous "
+"optimization: Benchmark problems, performance metric, and baseline "
+"results.](https://arxiv.org/abs/1706.03470)\" arXiv preprint "
+"arXiv:1706.03470 (2017)."
+msgstr ""
+"论文：\\\"[Evolutionary multitasking for single-objective continuous "
+"optimization: Benchmark problems, performance metric, and baseline "
+"results.](https://arxiv.org/abs/1706.03470)\" arXiv preprint "
+"arXiv:1706.03470 (2017)."
+
+#: ../../source/guide/DS_BL/CEC2017MTO.md:6
+msgid ""
+"Code Resource： [CEC2017MTO](http://www.bdsc.site/websites/MTO/index.html)"
+msgstr "代码资源：[CEC2017MTO](http://www.bdsc.site/websites/MTO/index.html)"
+
+#: ../../source/guide/DS_BL/CEC2017MTO.md:7
+#: ../../source/guide/DS_BL/WCCI2020.md:7
+msgid "Details"
+msgstr "细节"
+
+#: ../../source/guide/DS_BL/CEC2017MTO.md:12
+msgid ""
+"In MetaBox, we give three benchmark split difficulty mode of both train and "
+"test from the nine tasks of CEC2017 as **easy**, **difficult** and **full**."
+" The benchmark split criterion is according to the complexity of degree of "
+"intersection and inter-task similarity."
+msgstr ""
+"在MetaBox中，我们从CEC2017的九个任务中为训练和测试提供了三种基线分割难度模式，分别为**easy**、**difficult**和**full**。基线分割标准是根据交集的复杂程度和跨任务相似性。"
+
+#: ../../source/guide/DS_BL/CEC2017MTO.md:13
+msgid "**\"easy\"**:  train:[1,2,3,4,5,6] test:[7,8,9]"
+msgstr "**\"easy\"**: 训练:[1,2,3,4,5,6] 测试:[7,8,9]"
+
+#: ../../source/guide/DS_BL/CEC2017MTO.md:14
+msgid "**\"difficult\"**:  train:[7,8,9] test:[1,2,3,4,5,6]"
+msgstr "**\"difficult\"**: 训练:[7,8,9] 测试:[1,2,3,4,5,6]"
+
+#: ../../source/guide/DS_BL/CEC2017MTO.md:15
+msgid "**\"full\"**:  train:[1,2,3,4,5,6,7,8,9]  test:[1,2,3,4,5,6,7,8,9]"
+msgstr "**\"full\"**: 训练：[1,2,3,4,5,6,7,8,9]  测试：[1,2,3,4,5,6,7,8,9]"
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:1
+msgid "COCO-BBOB"
+msgstr "COCO-BBOB"
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:3
+msgid ""
+"The blackbox optimization benchmarking (bbob) test suite is COCO's standard "
+"test suite with 24 noiseless, single-objective and scalable test functions. "
+"Each function is provided in dimensions (2, 3, 5, 10, 20, 40) and in 15 "
+"instances, however also available for arbitrary dimensions and number of "
+"instances. Links to their definition with visualizations are provided in the"
+" table."
+msgstr ""
+"黑盒优化基线测试（bbob）测试套件是COCO的标准测试套件，包含24个无噪声、单目标和可扩展的测试函数。每个函数提供在维度（2, 3, 5, 10, "
+"20, 40）下的15个实例，但也支持任意维度和数量的实例。表格中提供了它们定义及可视化的链接。"
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:5
+msgid "Paper:"
+msgstr "论文："
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:6
+msgid ""
+"[N. Hansen et al "
+"(2010)](https://dl.acm.org/doi/abs/10.1145/1830761.1830790)."
+msgstr ""
+"[N. Hansen et al (2010)](https://dl.acm.org/doi/abs/10.1145/1830761.1830790)."
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:7
+msgid ""
+"[Comparing Results of 31 Algorithms from the Black-Box Optimization "
+"Benchmarking BBOB-2009.](https://dl.acm.org/doi/abs/10.1145/1830761.1830790)"
+msgstr ""
+"[Comparing Results of 31 Algorithms from the Black-Box Optimization "
+"Benchmarking BBOB-2009.](https://dl.acm.org/doi/abs/10.1145/1830761.1830790)"
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:8
+msgid ""
+"[Workshop Proceedings of the GECCO Genetic and Evolutionary Computation "
+"Conference 2010, ACM.](https://dl.acm.org/doi/abs/10.1145/1830761.1830790)"
+msgstr ""
+"[Workshop Proceedings of the GECCO Genetic and Evolutionary Computation "
+"Conference 2010, ACM.](https://dl.acm.org/doi/abs/10.1145/1830761.1830790)"
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:9
+msgid "Code Resource: [COCO](https://github.com/numbbo/coco)"
+msgstr "代码资源：[COCO](https://github.com/numbbo/coco)"
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:11
+msgid "1. Separable Functions"
+msgstr "1. 可分离函数"
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:44
+msgid "2. Functions with low or moderate conditioning"
+msgstr "2. 条件数低或适中的函数"
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:73
+msgid "3. Functions with high conditioning and unimodal"
+msgstr "3. 具有高条件性和单峰性的函数"
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:106
+msgid "4. Multi-modal functions with adequate global structure"
+msgstr "4. 具有良好全局结构的多元函数"
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:139
+msgid "5. Multi-modal functions with weak global structure"
+msgstr "5. 具有弱全局结构的多元函数"
+
+#: ../../source/guide/DS_BL/COCO-BBOB.md:172
+msgid ""
+"Only f1 and f5 are purely convex quadratic (f1) or purely linear in the "
+"domain of interest [-5,5]D (f5)."
+msgstr "仅f1和f5在感兴趣的区域[-5,5]D中是完全凸二次（f1）或完全线性（f5）。"
+
+#: ../../source/guide/DS_BL/HPO-B.md:1
+msgid "HPO-B"
+msgstr "HPO-B"
+
+#: ../../source/guide/DS_BL/HPO-B.md:3
+msgid ""
+"HPO-B is an autoML hyper-parameter optimization benchmark which includes a "
+"wide range of hyperparameter optimization tasks for 16 different model types"
+" (e.g., SVM, XGBoost, etc.), resulting in a total of 935 problem instances. "
+"The dimension of these problem instances range from 2 to 16. We also note "
+"that HPO-B represents problems with ill-conditioned landscape such as huge "
+"flattern."
+msgstr ""
+"HPO-B 是一个 autoML 超参数优化基线，它包含多种超参数优化任务，适用于 16 种不同的模型类型（例如，SVM、XGBoost 等），共计 "
+"935 个问题实例。这些问题实例的维度范围从 2 到 16。我们还注意到，HPO-B 代表具有不良条件地形的问题，例如巨大的平坦区域。"
+
+#: ../../source/guide/DS_BL/HPO-B.md:5
+msgid ""
+"**Paper**：\"[Hpo-b: A large-scale reproducible benchmark for black-box hpo "
+"based on openml.](https://arxiv.org/pdf/2106.06257)\" arXiv preprint "
+"arXiv:2106.06257 (2021)."
+msgstr ""
+"**论文**：\\\"[Hpo-b: A large-scale reproducible benchmark for black-box hpo "
+"based on openml.](https://arxiv.org/pdf/2106.06257)\" arXiv preprint "
+
+#: ../../source/guide/DS_BL/HPO-B.md:6
+msgid ""
+"**Code Resource**： "
+"[HPO-B](https://github.com/machinelearningnuremberg/HPO-B)"
+msgstr "**代码资源**： [HPO-B](https://github.com/machinelearningnuremberg/HPO-B)"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:1
+msgid "MOO-Synthetic"
+msgstr "MOO-Synthetic"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:3
+msgid ""
+"MOO-Synthetic is constructed by mixing 4 well-known multi-objective problem "
+"sets: ZDT, UF, DTLZ and WFG. In total, we have constructed 187 problem "
+"instances. Their objective numbers range from 2 \\~ 10, dimensions range "
+"from 6D \\~ 38D."
+msgstr ""
+"MOO-Synthetic 是由 4 个著名的多目标问题集（ZDT、UF、DTLZ 和 WFG）混合构建的。总共，我们构建了 187 "
+"个问题实例。它们的目标数量范围从 2 ~ 10，维度范围从 6D ~ 38D。"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:5
+msgid "**Paper**："
+msgstr "**论文**："
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:6
+msgid "[ZDT](https://ieeexplore.ieee.org/abstract/document/6787994)"
+msgstr "[ZDT](https://ieeexplore.ieee.org/abstract/document/6787994)"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:7
+msgid ""
+"[UF](https://www.al-"
+"roomi.org/multimedia/CEC_Database/CEC2009/MultiObjectiveEA/CEC2009_MultiObjectiveEA_TechnicalReport.pdf)"
+msgstr ""
+"[UF](https://www.al-"
+"roomi.org/multimedia/CEC_Database/CEC2009/MultiObjectiveEA/CEC2009_MultiObjectiveEA_TechnicalReport.pdf)"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:8
+msgid "[DTLZ](https://ieeexplore.ieee.org/abstract/document/1007032)"
+msgstr "[DTLZ](https://ieeexplore.ieee.org/abstract/document/1007032)"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:9
+msgid "[WFG](https://ieeexplore.ieee.org/abstract/document/1705400)"
+msgstr "[WFG](https://ieeexplore.ieee.org/abstract/document/1705400)"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:10
+msgid ""
+"**Code Resource**： [MOO-Synthetic](https://github.com/anyoptimization/pymoo)"
+msgstr "**代码资源**： [MOO-Synthetic](https://github.com/anyoptimization/pymoo)"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:12
+msgid "Overview"
+msgstr "概述"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:56
+msgid "Detailed Configurations"
+msgstr "详细配置"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:58
+msgid "ZDT Problems"
+msgstr "ZDT 问题"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:60
+msgid "ZDT1–ZDT3: 30 dimensions, 2 objectives"
+msgstr "ZDT1–ZDT3：30个维度，2个目标"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:61
+msgid "ZDT4, ZDT6: 10 dimensions, 2 objectives"
+msgstr "ZDT4, ZDT6: 10个维度，2个目标"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:62
+msgid "ZDT5 (binary problem) is excluded."
+msgstr "ZDT5（二进制问题）被排除。"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:64
+msgid "UF Problems"
+msgstr "UF 问题"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:88
+msgid "DTLZ Problems"
+msgstr "DTLZ 问题"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:117
+msgid "WFG Problems"
+msgstr "WFG 问题"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:154
+msgid "Dataset Split Strategy"
+msgstr "数据集分割策略"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:156
+msgid ""
+"To assess the generalization capabilities of algorithms, the dataset can be "
+"split based on **problem difficulty**, defined as:"
+msgstr "为了评估算法的泛化能力，数据集可以根据**问题难度**进行划分，定义为："
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:162
+msgid "Then, sort all 178 problems by this value:"
+msgstr "然后，根据这个值对所有178个问题进行排序："
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:164
+msgid "**Easy Mode**:"
+msgstr "**简单模式**："
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:165
+msgid "Training set: first 80% (142 problems)"
+msgstr "训练集：前80%（142个问题）"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:166
+msgid "Test set: remaining 20% (36 problems)"
+msgstr "测试集：剩余20%（36个问题）"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:168
+msgid "**Difficult Mode**:"
+msgstr "**困难模式**："
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:169
+msgid "Training set: first 20% (36 problems)"
+msgstr "训练集：前20%（36个问题）"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:170
+msgid "Test set: remaining 80% (142 problems)"
+msgstr "测试集：剩余 80%（142 个问题）"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:172
+msgid "Notes"
+msgstr "注意事项"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:174
+msgid "If you would like, we can also provide:"
+msgstr "如果您需要，我们也可以提供："
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:175
+msgid "Sample loading scripts (e.g., Python)"
+msgstr "示例加载脚本（例如，Python）"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:176
+msgid "Visualization tools for Pareto fronts"
+msgstr "Pareto前沿可视化工具"
+
+#: ../../source/guide/DS_BL/MOO-Synthetic.md:177
+msgid "JSON/CSV versions of the benchmark metadata"
+msgstr "基线元数据的JSON/CSV版本"
+
+#: ../../source/guide/DS_BL/Multi-Modal Optimization.md:1
+msgid "Multi-Modal Optimization"
+msgstr "多模态优化"
+
+#: ../../source/guide/DS_BL/Multi-Object Optimization.md:1
+msgid "Multi-Object Optimization"
+msgstr "多目标优化"
+
+#: ../../source/guide/DS_BL/Multi-Task Optimization.md:1
+msgid "Multi-Task Optimization"
+msgstr "多任务优化"
+
+
+#: ../../source/guide/DS_BL/Neuroevolution.md:3
+msgid ""
+"This problem set is based on the neuroevolution interfaces in <a "
+"href=\"https://evox.readthedocs.io/en/latest/examples/brax.html\">EvoX</a>. "
+"The goal is to optimize the parameters of neural network-based RL agents for"
+" a series of Robotic Control tasks. We pre-define 11 control tasks (e.g., "
+"swimmer, ant, walker2D etc.), and 6 MLP structures with 0~5 hidden layers. "
+"The combinations of task & network structure result in 66 problem instances,"
+" which feature extremely high-dimensional problems (>=1000D)."
+msgstr ""
+"这个问题集基于 <a "
+"href=\"https://evox.readthedocs.io/en/latest/examples/brax.html\">EvoX</a>"
+" 中的神经进化接口。目标是通过优化基于神经网络的强化学习智能体的参数来应对一系列机器人控制任务。我们预先定义了 11 "
+"个控制任务（例如，游泳者、蚂蚁、2D 行走者等），以及 6 种具有 0~5 个隐藏层的 MLP 结构。任务与网络结构的组合产生了 66 "
+"个问题实例，这些实例具有极高的维度（>=1000D）。"
+
+#: ../../source/guide/DS_BL/Neuroevolution.md:5
+msgid ""
+"**Paper**：\"[EvoX: A distributed GPU-accelerated framework for scalable "
+"evolutionary "
+"computation.](https://ieeexplore.ieee.org/abstract/document/10499977)\" IEEE"
+" Transactions on Evolutionary Computation (2024)."
+msgstr ""
+"**论文**：\\\"[EvoX: "
+"一个可扩展的分布式GPU加速进化计算框架。](https://ieeexplore.ieee.org/abstract/document/10499977)\\\""
+" IEEE Transactions on Evolutionary Computation (2024)."
+
+#: ../../source/guide/DS_BL/Neuroevolution.md:6
+msgid "**Code Resource**： [NE](https://github.com/EMI-Group/evox)"
+msgstr "**代码资源**： [NE](https://github.com/EMI-Group/evox)"
+
+#: ../../source/guide/DS_BL/Problem Sets.md:1
+msgid "Problem Sets"
+msgstr "问题集"
+
+
+#: ../../source/guide/DS_BL/Protein-Docking.md:3
+msgid ""
+"Protein-Docking benchmark, where the objective is to minimize the Gibbs free"
+" energy resulting from protein-protein interaction between a given complex "
+"and any other conformation. We select 28 protein complexes and randomly "
+"initialize 10 starting points for each complex, resulting in 280 problem "
+"instances. To simplify the problem structure, we only optimize 12 "
+"interaction points in a complex instance (12D problem)."
+msgstr ""
+"蛋白质对接基线测试，其目标是使给定复合物与其他构象之间蛋白质-"
+"蛋白质相互作用的吉布斯自由能最小化。我们选择了28个蛋白质复合物，并为每个复合物随机初始化10个起始点，从而产生280个问题实例。为了简化问题结构，我们在复合物实例中仅优化12个相互作用点（12D问题）。"
+
+#: ../../source/guide/DS_BL/Protein-Docking.md:5
+msgid ""
+"**Paper**：\"[Protein–protein docking benchmark version "
+"4.0.](https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.22830)\" "
+"Proteins: Structure, Function, and Bioinformatics 78.15 (2010): 3111-3114."
+msgstr ""
+"**论文**：\\\"[蛋白质-蛋白质对接基线测试版本 "
+"4.0.](https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.22830)\\\" "
+"Proteins: Structure, Function, and Bioinformatics 78.15 (2010): 3111-3114."
+
+#: ../../source/guide/DS_BL/Protein-Docking.md:6
+msgid ""
+"**Code Resource**： [Protein-Docking](https://zlab.wenglab.org/benchmark/)"
+msgstr "**代码资源**： [蛋白质对接](https://zlab.wenglab.org/benchmark/)"
+
+#: ../../source/guide/DS_BL/Single-Object Optimization.md:1
+msgid "Single-Object Optimization"
+msgstr "单目标优化"
+
+#: ../../source/guide/DS_BL/UAV.md:3
+msgid ""
+"UAV provides 56 terrain-based landscapes as realistic Unmanned Aerial "
+"Vehicle(UAV) path planning problems, each of which is 30D. The objective is "
+"to select given number of path nodes (x,y,z coordinates) from the 3D space, "
+"so the the UAV could fly as shortly as possible in a collision-free way."
+msgstr ""
+"UAV 提供 56 个基于地形的地形图，作为逼真的无人机(UAV)路径规划问题，每个问题都是 30 维的。目标是选择给定数量的路径节点（x,y,z "
+"坐标）从 3D 空间中，以便无人机能够以无碰撞的方式尽可能短地飞行。"
+
+#: ../../source/guide/DS_BL/UAV.md:5
+msgid ""
+"**Paper**：\"[Benchmarking global optimization techniques for unmanned aerial"
+" vehicle path planning.](https://arxiv.org/abs/2501.14503)\" arXiv preprint "
+"arXiv:2501.14503 (2025)."
+msgstr ""
+"**论文**：\\\"[Benchmarking global optimization techniques for unmanned aerial "
+"vehicle path planning.](https://arxiv.org/abs/2501.14503)\\\" arXiv 预印本 "
+"arXiv:2501.14503 (2025)."
+
+#: ../../source/guide/DS_BL/UAV.md:6
+msgid "**Code Resource**： [UAV](https://zenodo.org/records/12793991)"
+msgstr "**代码资源**： [UAV](https://zenodo.org/records/12793991)"
+
+#: ../../source/guide/DS_BL/UAV.md:7
+msgid "**Problem Suite Composition:**"
+msgstr "**问题套件组合：**"
+
+#: ../../source/guide/DS_BL/UAV.md:9
+msgid "A total of **56 benchmark instances**."
+msgstr "总共 **56 个基线实例**。"
+
+#: ../../source/guide/DS_BL/UAV.md:11
+msgid ""
+"Selected from **5,000 automatically generated terrains**, with **56 diverse "
+"terrains** carefully chosen for their complexity and real-world resemblance."
+msgstr "从**5,000个自动生成的地形**中选出，并**56个具有多样性的地形**经过精心挑选，因其复杂性和与现实世界的相似性。"
+
+#: ../../source/guide/DS_BL/UAV.md:13
+msgid ""
+"The terrains include a variety of features such as plains, hills, steep "
+"slopes, and deep valleys."
+msgstr "地形包括平原、丘陵、陡坡和深谷等多种特征。"
+
+#: ../../source/guide/DS_BL/UAV.md:15
+msgid "**Composed of two obstacle configurations:**"
+msgstr "由两个障碍物配置组成："
+
+#: ../../source/guide/DS_BL/UAV.md:16
+msgid "**15 cylindrical threats** (sparse scenario)"
+msgstr "**15圆柱形威胁**（稀疏场景）"
+
+#: ../../source/guide/DS_BL/UAV.md:18
+msgid "**30 cylindrical threats** (dense scenario)"
+msgstr "**30圆柱形威胁**（密集场景）"
+
+#: ../../source/guide/DS_BL/UAV.md:19
+msgid ""
+"Threats are modeled as cylinders with varying heights and radii, simulating "
+"realistic obstacles like radar stations or missile sites."
+msgstr "威胁被建模为具有不同高度和半径的圆柱体，模拟雷达站或导弹发射场等现实障碍物。"
+
+#: ../../source/guide/DS_BL/UAV.md:20
+msgid ""
+"The UAV must navigate from a fixed **start** to a **goal point**, positioned"
+" at opposite corners of the terrain."
+msgstr "无人机必须从固定的**start**点导航到位于地形对角线的**goal point**。"
+
+#: ../../source/guide/DS_BL/UAV.md:21
+msgid ""
+"Start and goal points are located in safe regions, outside of the threat "
+"zones."
+msgstr "起点和终点位于安全区域内，在威胁区之外。"
+
+#: ../../source/guide/DS_BL/UAV.md:23
+msgid "**Instance Composition:**"
+msgstr "**实例组合：**"
+
+#: ../../source/guide/DS_BL/UAV.md:24
+msgid "**28 terrains × 2 threat settings = 56 total benchmark instances**"
+msgstr "**28 地形 × 2 威胁设置 = 56 个总基线实例**"
+
+#: ../../source/guide/DS_BL/UAV.md:27
+msgid "Objective function"
+msgstr "目标函数"
+
+
+#: ../../source/guide/DS_BL/UAV.md:35
+msgid "**1. Path Length Cost**"
+msgstr "**1. 路径长度代价**"
+
+#: ../../source/guide/DS_BL/UAV.md:37
+#, python-brace-format
+msgid ""
+"Let $X_i$ be the flight path $i$, where each point along the path is "
+"$P_{ij}=(x_{ij}, y_{ij}, z_{ij})$. Let $S$ and $G$ denote the start and goal"
+" points, respectively."
+msgstr ""
+"设 $X_i$ 为飞行路径 $i$，路径上的每个点为 $P_{ij}=(x_{ij}, y_{ij}, z_{ij})$。设 $S$ 和 $G$ "
+"分别表示起点和终点。"
+
+#: ../../source/guide/DS_BL/UAV.md:39
+msgid "The path length cost $F_1(X_i)$ is defined as:"
+msgstr "路径长度成本 $F_1(X_i)$ 定义为："
+
+#: ../../source/guide/DS_BL/UAV.md:45
+msgid "**2. Obstacle Avoidance Cost**"
+msgstr "**2. 障碍物避让代价**"
+
+#: ../../source/guide/DS_BL/UAV.md:47
+msgid ""
+"Let $k$ be the index of the $k$-th threat, with center $C_k$ and radius "
+"$R_k$.   Let $T_k$ be the penalty from threat $k$, and $d_k$ the distance "
+"from the path segment to the center of threat $k$.   Let "
+"$J_{\\text{pen}}=10^4$ represent a large penalty for entering the dangerous "
+"zone.   Assume the drone has diameter $D$, and $S$ is the safety distance "
+"threshold."
+msgstr ""
+"令 $k$ 为第 $k$ 个威胁的索引，其中心为 $C_k$，半径为 $R_k$。   令 $T_k$ 为来自威胁 $k$ 的惩罚，$d_k$ "
+"为路径段到威胁 $k$ 中心的距离。   令 $J_{\text{pen}}=10^4$ 代表进入危险区域的较大惩罚。   假设无人机直径为 "
+"$D$，$S$ 是安全距离阈值。"
+
+#: ../../source/guide/DS_BL/UAV.md:52
+msgid "The penalty function is defined as:"
+msgstr "惩罚函数定义为："
+
+#: ../../source/guide/DS_BL/UAV.md:63
+msgid "The total obstacle avoidance cost $F_2(X_i)$ is:"
+msgstr "总避障成本 $F_2(X_i)$ 为："
+
+#: ../../source/guide/DS_BL/UAV.md:69
+msgid "**3. Altitude Cost**"
+msgstr "**3. 高程成本**"
+
+#: ../../source/guide/DS_BL/UAV.md:71
+msgid ""
+"Let $h_{\\text{max}}$ and $h_{\\text{min}}$ be the maximum and minimum "
+"allowable flight altitudes.  Let $h_{ij}$ be the height of point $P_{ij}$ "
+"above the terrain."
+msgstr ""
+"令 $h_{\text{max}}$ 和 $h_{\text{min}}$ 分别为最大和最小允许飞行高度。令 $h_{ij}$ 为点 "
+"$P_{ij}$ 相对于地面的高度。"
+
+#: ../../source/guide/DS_BL/UAV.md:73
+#, python-brace-format
+msgid "The altitude cost $H_{ij}$ is defined as:"
+msgstr "海拔成本 $H_{ij}$ 定义为："
+
+
+#: ../../source/guide/DS_BL/UAV.md:83
+msgid "The total altitude cost $F_3(X_i)$ is:"
+msgstr "总海拔成本 $F_3(X_i)$ 是："
+
+#: ../../source/guide/DS_BL/UAV.md:89
+msgid "**4. Smoothness Cost**"
+msgstr "**4. 平滑度成本**"
+
+#: ../../source/guide/DS_BL/UAV.md:91
+#, python-brace-format
+msgid ""
+"Let $\\theta_{ij}$ be the deflection angle at point $j$ and $\\phi_{ij}$ the"
+" climb angle.  Assume $P'_{ij}$ are the projected 2D points (ignoring "
+"altitude)."
+msgstr ""
+"令 $\theta_{ij}$ 为点 $j$ 的偏转角，$\phi_{ij}$ 为爬升角。假设 $P'_{ij}$ 是投影的 2D "
+"点（忽略高度）。"
+
+#: ../../source/guide/DS_BL/UAV.md:93
+msgid "The deflection angle is computed as:"
+msgstr "挠度角计算如下："
+
+
+#: ../../source/guide/DS_BL/UAV.md:105
+msgid "The climb angle is computed as:"
+msgstr "爬升角计算如下："
+
+
+#: ../../source/guide/DS_BL/UAV.md:113
+msgid "The total smoothness cost $F_4(X_i)$ is:"
+msgstr "总平滑成本 $F_4(X_i)$ 为："
+
+#: ../../source/guide/DS_BL/UAV.md:119
+msgid "Where $\\beta_1$ and $\\beta_2$ are penalty coefficients."
+msgstr "其中 $\beta_1$ 和 $\beta_2$ 是惩罚系数。"
+
+#: ../../source/guide/DS_BL/UAV.md:122
+msgid "**5. Terrain Cost**"
+msgstr "**5. 地形成本**"
+
+#: ../../source/guide/DS_BL/UAV.md:124
+#, python-brace-format
+msgid ""
+"Let $H$ be the terrain height matrix, representing the ground elevation over"
+" the entire area. For a given path $X_i$, we insert $n$ interpolated points "
+"between each pair of adjacent path points $P_{ij}$ and $P_{i,j+1}$ to "
+"evaluate terrain safety."
+msgstr ""
+"设 $H$ 为地形高度矩阵，表示整个区域的地势高度。对于给定的路径 $X_i$，我们在每对相邻路径点 $P_{ij}$ 和 $P_{i,j+1}$ "
+"之间插入 $n$ 个插值点，以评估地形安全性。"
+
+#: ../../source/guide/DS_BL/UAV.md:126
+msgid "Each interpolated point along the path segment is defined as:"
+msgstr "路径段上的每个插值点定义如下："
+
+#: ../../source/guide/DS_BL/UAV.md:132
+msgid ""
+"Let $H(x, y)$ denote the interpolated terrain height at coordinate $(x, y)$."
+" The cost at each interpolated point is defined as:"
+msgstr "令 $H(x, y)$ 表示坐标 $(x, y)$ 处的插值地形高度。每个插值点的成本定义为："
+
+#: ../../source/guide/DS_BL/UAV.md:142
+msgid "Then, the total terrain violation cost for path $X_i$ is given by:"
+msgstr "然后，路径 $X_i$ 的总地形违规成本为："
+
+#: ../../source/guide/DS_BL/UAV.md:148
+msgid ""
+"This ensures that all interpolated segments of the path are strictly above "
+"the terrain surface."
+msgstr "这确保了路径的所有插值段都严格位于地形表面之上。"
+
+#: ../../source/guide/DS_BL/WCCI2020.md:1
+msgid "WCCI2020"
+msgstr "WCCI2020"
+
+#: ../../source/guide/DS_BL/WCCI2020.md:3
+msgid ""
+"WCCI2020 comprises 10 multi-task problem instances, each of which contains "
+"50 basic problems. Optional basic problems include Shpere, Rosenbrock, "
+"Ackley, Rastrigin, Griewank, Weierstrass and Schwefel, which are all 50D."
+msgstr ""
+"WCCI2020 包含 10 个多任务问题实例，每个实例包含 50 个基本问题。可选的基本问题包括 "
+"Sphere、Rosenbrock、Ackley、Rastrigin、Griewank、Weierstrass 和 Schwefel，这些都是 50D "
+"的。"
+
+#: ../../source/guide/DS_BL/WCCI2020.md:5
+msgid ""
+"Paper：[WCCI2020](http://www.bdsc.site/websites/MTO_competition_2020/MTO_Competition_WCCI_2020.html)"
+msgstr ""
+"论文：[WCCI2020](http://www.bdsc.site/websites/MTO_competition_2020/MTO_Competition_WCCI_2020.html)"
+
+#: ../../source/guide/DS_BL/WCCI2020.md:6
+msgid ""
+"Code Resource： [WCCI2020](http://www.bdsc.site/websites/MTO/index.html)"
+msgstr "代码资源：[WCCI2020](http://www.bdsc.site/websites/MTO/index.html)"
+
+#: ../../source/guide/DS_BL/WCCI2020.md:12
+msgid ""
+"In MetaBox, we give three benchmark split difficulty mode of both train and "
+"test from the ten tasks of WCCI2020 as **easy**, **difficult** and **full**."
+" The benchmark split criterion is according to the richness of the "
+"composition of the basic functions."
+msgstr ""
+"在MetaBox中，我们从WCCI2020的十个任务中为训练和测试提供了三种基线分割难度模式，分别为**easy**、**difficult**和**full**。基线分割标准是根据基本函数组成的丰富性。"
+
+#: ../../source/guide/DS_BL/WCCI2020.md:13
+msgid "**\"easy\"**: train:[1,2,3,4,5,6] test:[7,8,9,10]"
+msgstr "**\"easy\"**: 训练:[1,2,3,4,5,6] 测试:[7,8,9,10]"
+
+#: ../../source/guide/DS_BL/WCCI2020.md:14
+msgid "**\"difficult\"**:  train:[7,8,9,10] test:[1,2,3,4,5,6]"
+msgstr "**\"difficult\"**: 训练:[7,8,9,10] 测试:[1,2,3,4,5,6]"
+
+#: ../../source/guide/DS_BL/WCCI2020.md:15
+msgid "**\"full\"**:  train:[1,2,3,4,5,6,7,8,9,10]  test:[1,2,3,4,5,6,7,8,9,10]"
+msgstr "**\"full\"**:  训练:[1,2,3,4,5,6,7,8,9,10]  测试:[1,2,3,4,5,6,7,8,9,10]"
+
+#: ../../source/guide/DS_BL/index.md:1
+msgid "Assets"
+msgstr "问题集和基线"
+
+#: ../../source/guide/DS_BL/index.md:3
+msgid "introduce the problem set and baseline we use"
+msgstr "介绍我们使用的问题集和基线"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:1 your
+msgid "Develop your MetaBBO"
+msgstr "开发你的MetaBBO"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:3 your
+msgid "MetaBBO"
+msgstr "元黑箱优化"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:5 your
+msgid "1. Create your own Agent"
+msgstr "1. 创建您自己的 Agent"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:8 your
+msgid ""
+"MetaBOX not only supports RL-based MetaBBO methods, \\ but also supports "
+"MetaBBO methods based on SL, NE, and ICL. \\ Below, we use the RL-based "
+"method as an example; \\ for other methods, the overall development logic "
+"remains the same, except that you should define and develop your own "
+"internal learning logic."
+msgstr ""
+"MetaBOX 不仅支持基于 RL 的 MetaBBO 方法，还支持基于 SL、NE 和 ICL 的 MetaBBO 方法。 下面，我们以基于 "
+"RL 的方法为例； 对于其他方法，整体开发逻辑相同，只是你需要定义和开发自己的内部学习逻辑。"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:5 your
+msgid "1. Create your own Agent"
+msgstr "1. 创建你自己的智能体"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:14 your
+msgid "1.1. Create your own Meta-level Policy"
+msgstr "1.1. 创建你自己的元级策略"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:17 your
+msgid ""
+"The Meta-level policy is a learning agent that could be either RL or other "
+"learning paradigm. \\ MetaBOX has pre-implemented various RL methods — refer"
+" to [here](https://github.com/MetaEvo/MetaBox/tree/v2.0.0/src/rl) for "
+"details. \\ You just need to inherit a RL class and design your own Agent — "
+"Jump directly to [Create your own Agent](#create-your-own-optimizer) ！"
+msgstr ""
+"元级策略是一个学习代理，它可以是强化学习（RL）或其他学习范式。MetaBOX已经预实现了多种强化学习方法——详情请参考[这里](https://github.com/MetaEvo/MetaBox/tree/v2.0.0/src/rl)。您只需要继承一个RL类并设计自己的Agent——直接跳转到[创建自己的Agent](#create-"
+"your-own-optimizer)！"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:23 your
+msgid "1️⃣ Import Required Packages"
+msgstr "1️⃣ 导入所需包"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:30 your
+msgid "2️⃣ Initialize the RL Class"
+msgstr "2️⃣ 初始化 RL 类"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:56 your
+msgid "3️⃣ Initialize the Network (Optional)"
+msgstr "3️⃣ 初始化网络（可选）"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:59 your
+msgid ""
+"This function is designed for rl methods that require networks and is not "
+"necessary."
+msgstr "此函数专为需要网络的强化学习（rl）方法设计，并非必需。"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:67 your
+msgid "4️⃣ Set update rules"
+msgstr "4️⃣ 设置更新规则"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:74 your
+msgid "5️⃣ The Main Function for Training"
+msgstr "5️⃣ 训练的主函数"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:129 your
+msgid "6️⃣ The Main Function for Testing"
+msgstr "6️⃣ 测试主函数"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:158 your
+msgid "6️⃣ The Main Function to Record Data for Analysis"
+msgstr "6️⃣ 主要用于记录分析数据的函数"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:168 your
+msgid ""
+"Not familiar with tensorboard? Click this "
+"[link](https://www.tensorflow.org/tensorboard/get_started)."
+msgstr ""
+"不熟悉TensorBoard？点击这个[链接](https://www.tensorflow.org/tensorboard/get_started)。"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:171 your
+msgid "1.2. Create your own Agent"
+msgstr "1.2. 创建自己的 Agent"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:174 your
+msgid ""
+"MetaBOX has pre-implemented various RL methods — refer to **Gallery > "
+"Config** for details. \\ You just need to inherit it and design your own "
+"Agent ！\\ Here we take the rl method inherited from MetaBOX as an example."
+msgstr ""
+"MetaBOX 已实现了多种 RL 算法 — 请参考 **API Reference** 获取详细信息。您只需继承它并设计自己的 "
+"Agent 即可！ 这里以继承自 MetaBOX 的 RL 算法为例。"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:179 MetaBBO.md:290
+#: MetaBBO.md:378 Problem Set.md:9 your
+msgid "1️⃣ Inheritance and Initialization"
+msgstr "1️⃣ 继承和初始化"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:196 your
+msgid "2️⃣ Modify train_episode according to specific work (Optional)"
+msgstr "2️⃣ 根据（特定的）工作修改 `train_episode`（可选）"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:199 your
+msgid "This is designed for those with special training needs, not necessary"
+msgstr "这是为那些有特殊训练需求的人设计的，不是必需的。"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:255 your
+msgid "2️⃣ Modify rollout_episode according to specific work (Optional)"
+msgstr "2️⃣ 根据具体工作修改 rollout_episode（可选）"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:258 your
+msgid "This is designed for those with special test needs, not necessary"
+msgstr "这是为有特殊测试需求的人设计的，不是必需的。"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:288 your
+msgid "2. Create your own Optimizer"
+msgstr "2. 创建自己的 Optimizer"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:313 your
+msgid "2️⃣ Initialize the population"
+msgstr "2️⃣ 初始化种群"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:330 your
+msgid "3️⃣ The Main function for updating"
+msgstr "3️⃣ 更新主函数"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:367 your
+msgid ""
+"Since optimizer is extremely flexible, the above functions are only "
+"necessary \\ and need to be adjusted appropriately **according to specific "
+"tasks**."
+msgstr "由于optimizer（优化器）非常灵活，上述函数仅是必要的，并且需要根据具体任务**适当调整**。"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:371 your
+msgid "BBO"
+msgstr "BBO"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:374 your
+msgid ""
+"Considering that you may need to compare with other bbo,\\ we also open the "
+"bbo design interface to you! 😉"
+msgstr "考虑到您可能需要与其他 bbo 进行比较，我们也为您开放了 bbo 设计接口！😉"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:401 your
+msgid "2️⃣ The Main Function for Testing"
+msgstr "2️⃣ 测试的主要函数"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:437 your
+msgid ""
+"MetaBOX not only supports RL-based MetaBBO methods, but also supports "
+"MetaBBO methods based on SL, NE, and ICL."
+msgstr "MetaBOX 不仅支持基于 RL 的 MetaBBO 方法，还支持基于 SL、NE 和 ICL 的 MetaBBO 方法。"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:440 your
+msgid "Exp:"
+msgstr "**实验**："
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:441 your
+msgid "**MetaBBO-RL**：GLEET"
+msgstr "**MetaBBO-RL**：GLEET"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:442 your
+msgid "**MetaBBO-SL**：GLHF"
+msgstr "**MetaBBO-SL**：GLHF"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:443 your
+msgid "**MetaBBO-NE**：LES"
+msgstr "**MetaBBO-NE**：LES"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:444 your
+msgid "**MetaBBO-ICL**：OPRO"
+msgstr "**MetaBBO-ICL**：OPRO"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:446 your
+msgid ""
+"Compared to RL, other methods differ in that they do not require an `rl` "
+"class and are instead built directly by inheriting from `basic_agent`."
+msgstr "与其他方法相比，RL 的不同之处在于它不需要一个 `rl` 类，而是直接通过继承 `basic_agent` 来构建。"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:448 your
+msgid "1️⃣ Create the Agent"
+msgstr "1️⃣ 创建 Agent"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:456 your
+msgid ""
+"The procedure can be referred to in [Create your own agent](#12-create-your-"
+"own-agent)."
+msgstr "该过程可参考 [创建自己的代理](#12-create-your-own-agent)。"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:458 your
+msgid "2️⃣ Create the Optimizer"
+msgstr "2️⃣ 创建优化器"
+
+#: ../../source/guide/Gallery/Develop MetaBBO.md:460 your
+msgid ""
+"The procedure can be referred to in [Create your own optimizer](#2-create-"
+"your-own-optimizer)."
+msgstr "该过程可参考 [创建自己的优化器](#2-create-your-own-optimizer)。"
+
+#: ../../source/guide/Gallery/Develop Problem Set.md:1 your
+msgid "Develop your Problem Set"
+msgstr "开发您的问题集"
+
+#: ../../source/guide/Gallery/Develop Problem Set.md:4 your
+msgid ""
+"The dataset needs to be constructed in **two versions: torch and numpy**, \\"
+" to facilitate the use of different optimizers. \\  The following is an "
+"example of the numpy version"
+msgstr "数据集需要以 **两种版本：torch 和 numpy** 构建，以方便使用不同的优化器。以下是以 numpy 版本为例："
+
+#: ../../source/guide/Gallery/Develop Problem Set.md:27 your
+msgid "2️⃣ Instantiation Function"
+msgstr "2️⃣ 实例化函数"
+
+#: ../../source/guide/Gallery/Develop Problem Set.md:43 your
+msgid "2️⃣ Instantiation Dataset"
+msgstr "2️⃣ 实例化数据集"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:1 Usage of
+msgid "Flexible Usage of Metadata"
+msgstr "元数据的灵活使用"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:3 Usage of
+msgid "1. the concept of the Metadata"
+msgstr "1. **元数据的概念**"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:8 Usage of
+msgid "2. save/load your metadata for a testing procedure"
+msgstr "2. 保存/加载测试流程的元数据"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:9 Usage of
+msgid ""
+"Suppose you want to  test a checkpoint of GLEET on all test problem "
+"isntances in bbob-10D-difficult, MetaBox-v2 will automatically record and "
+"organize the process data as the metadata and saves it to a file you "
+"indicate."
+msgstr ""
+"假设你想在 bbob-10D-difficult 的所有测试问题实例上测试 GLEET 的检查点，MetaBox-v2 "
+"将自动记录和组织过程数据作为元数据，并将其保存到你指定的文件中。"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:37 Usage of
+msgid ""
+"You can find metadata file at \"./test/bbob-10D/metadata/GLEET/\". Once the "
+"metada is saved, you can load it back anytime you want to do some analysis "
+"works."
+msgstr ""
+"您可以在 \"./test/bbob-10D/metadata/GLEET/" "
+"找到元数据文件。一旦元数据被保存，您可以随时加载它，以便进行一些分析工作。"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:59 Usage of
+msgid "3. usage cases"
+msgstr "3. 使用案例"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:60 Usage of
+msgid ""
+"3.1 draw optimization curve from metadata for \"one baseline on one "
+"testsuites\""
+msgstr "3.1 从 "一个基线在一个测试套件上" 的元数据中绘制优化曲线"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:61 Usage of
+msgid ""
+"Since metadata has record all optimization episodes (per-step solution "
+"positions and objective values) for all tested problem instances and all "
+"test runs, you can draw optimization curves of the baseline under different "
+"granularities. For example:"
+msgstr "由于元数据记录了所有测试问题实例和所有测试运行中所有优化回合（每步解的位置和目标值），因此您可以绘制不同粒度下基线的优化曲线。例如："
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:63 Usage of
+msgid ""
+"draw optimization curve of a specific test run of a specific problem "
+"instance:"
+msgstr "绘制特定问题实例的特定测试运行优化曲线："
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:84 Usage of
+msgid ""
+"draw normalized optimization curve across all problem instances and test "
+"runs:"
+msgstr "绘制所有问题实例和测试运行中的标准化优化曲线："
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:104 Usage of
+msgid ""
+"3.2 summarize performance comparison table from metadata for \"multiple "
+"baselines on one testsuites\""
+msgstr "3.2 从元数据中汇总“在单个测试套件上的多个基线”的性能比较表"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:105 Usage of
+msgid ""
+"see our tutorial at "
+"[here](https://github.com/MetaEvo/MetaBox/blob/v2.0.0/for_review). You need "
+"to train some baselines on a given testsuites first, and test their "
+"checkpoints to obtain their metadata. Then you could summarize performance "
+"comparison table following \"table_3.py\"."
+msgstr ""
+"请参考我们的教程 "
+"[here](https://github.com/MetaEvo/MetaBox/blob/v2.0.0/for_review)。您需要先在给定的 "
+"testsuites 上训练一些基线，然后测试它们的 checkpoints 以获取它们的 metadata。然后您可以按照 "
+"\\\"table_3.py\\\" 总结性能比较表。"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:108 Usage of
+msgid ""
+"3.3 summarize Anti-NFL performance comparison from metadata for \"multiple "
+"baselines on multiple testsuites\""
+msgstr "3.3 从元数据中总结“多个基线在多个测试套件上的Anti-NFL性能比较”"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:109 Usage of
+msgid ""
+"see our tutorial at "
+"[here](https://github.com/MetaEvo/MetaBox/blob/v2.0.0/for_review). You need "
+"to train some baselines on multiple given testsuites first, and test their "
+"checkpoints to obtain their metadata. Then you could summarize Anti-NFL "
+"performance comparison following \"figure_7.py\"."
+msgstr ""
+"请参考我们的教程 "
+"[here](https://github.com/MetaEvo/MetaBox/blob/v2.0.0/for_review)。您需要先在多个给定的测试套件上训练一些基线，然后测试它们的检查点以获取它们的元数据。然后您可以按照"
+" \"figure_7.py" 总结 Anti-NFL 性能比较。"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:111 Usage of
+msgid "4. Other usages"
+msgstr "4. 其他用法"
+
+#: ../../source/guide/Gallery/Flexible Metadata.md:112 Usage of
+msgid ""
+"We provide metadata to maximize the freedom of users. Based on these very "
+"basic data items from the testing procedure, we believe users could "
+"determine their customized analysis metrics."
+msgstr "我们提供元数据以最大化用户的自由度。基于这些来自测试流程的基本数据项，我们相信用户可以确定他们定制的分析指标。"
+
+#: ../../source/guide/Gallery/Flexibly EC Integrate Libraries.md:1 other
+msgid "Flexibly Integrate other EC Libraries"
+msgstr "灵活集成其他EC库"
+
+#: ../../source/guide/Gallery/Flexibly EC Integrate Libraries.md:4 other
+msgid ""
+"There are many excellent libraries in our community that provide either "
+"testsuites or optimizer implementations. \\ MetaBOX supports their flexible "
+"integration to promote the open-source ecosystem in the community. \\ We "
+"provide following two examples to showcase such flexible usage, and hope you"
+" users come up with more novel integration ideas."
+msgstr ""
+"我们的社区中有许多优秀的库，它们提供测试套件或优化器实现。MetaBOX "
+"支持它们的灵活集成，以促进社区的开源生态系统。我们提供以下两个示例来展示这种灵活的使用方式，并希望用户能提出更多新颖的集成想法。"
+
+#: ../../source/guide/Gallery/Flexibly EC Integrate Libraries.md:8 other
+msgid "EvoX"
+msgstr "EvoX"
+
+#: ../../source/guide/Gallery/Flexibly EC Integrate Libraries.md:10 other
+msgid ""
+"[EvoX](https://github.com/EMI-Group/evox) is a distributed GPU-accelerated "
+"evolutionary computation framework compatible with PyTorch."
+msgstr ""
+"[EvoX](https://github.com/EMI-Group/evox) 是一个与 PyTorch 兼容的分布式 GPU 加速进化计算框架。"
+
+#: ../../source/guide/Gallery/Flexibly EC Integrate Libraries.md:12 other
+msgid ""
+"See "
+"[here](https://github.com/MetaEvo/MetaBox/tree/v2.0.0/src/environment/problem/SOO/NE)"
+" to check how we wrap BraxProblem from EvoX into the neuroevolution problem "
+"instances. Based on the warpped problem instances, users can easily make "
+"their own testsuites in MetaBox-v2 and use the testsuites for training and "
+"testing MetaBBO baselines."
+msgstr ""
+"参见 "
+"[此处](https://github.com/MetaEvo/MetaBox/tree/v2.0.0/src/environment/problem/SOO/NE)"
+" 了解我们如何将 EvoX 中的 BraxProblem 封装为神经演化问题实例。基于封装的问题实例，用户可以轻松在 MetaBox-v2 "
+"中创建自己的测试套件，并使用这些测试套件进行 MetaBBO 基线的训练和测试。"
+
+#: ../../source/guide/Gallery/Flexibly EC Integrate Libraries.md:14 other
+msgid "PyPop7"
+msgstr "PyPop7"
+
+#: ../../source/guide/Gallery/Flexibly EC Integrate Libraries.md:16 other
+msgid ""
+"[PyPop7](https://github.com/Evolutionary-Intelligence/pypop) is a Python "
+"library of POPulation-based OPtimization for single-objective, real-"
+"parameter, unconstrained black-box problems. It maintains many BBO baselines"
+" that could be used and integrated into MetaBox-v2 for comparison and "
+"analysis usages."
+msgstr ""
+"[PyPop7](https://github.com/Evolutionary-Intelligence/pypop) "
+"是一个用于单目标、实参数、无约束黑盒问题的 Python 种群优化库。它维护了许多 BBO 基线，可用于并集成到 MetaBox-v2 "
+"中进行比较和分析用途。"
+
+#: ../../source/guide/Gallery/Flexibly EC Integrate Libraries.md:18 other
+msgid ""
+"See "
+"[here](https://github.com/MetaEvo/MetaBox/blob/v2.0.0/src/baseline/bbo/shade.py)"
+" to check how we warp a PyPop7 optimizer into the BBBO optimizer in "
+"MetaBox-v2."
+msgstr ""
+"参考 "
+"[此处](https://github.com/MetaEvo/MetaBox/blob/v2.0.0/src/baseline/bbo/shade.py)"
+" 来查看我们如何在 MetaBox-v2 中将一个 PyPop7 优化器包装成 BBBO 优化器。"
+
+#: ../../source/guide/Gallery/Flexibly Leverage Parallelism.md:1
+msgid "Flexibly Leverage Parallelism"
+msgstr "灵活利用并行性"
+
+#: ../../source/guide/Gallery/Flexibly Leverage Parallelism.md:2
+msgid "1. Training parallelism"
+msgstr "1. 训练并行性"
+
+#: ../../source/guide/Gallery/Flexibly Leverage Parallelism.md:7
+msgid ""
+"MetaBox-v2 provides "
+"[VecEnv](https://github.com/MetaEvo/MetaBox/tree/v2.0.0/src/environment/parallelenv)"
+" to support parallel sampling for the training of MetaBBO. The overall "
+"workflow is: trh Trainer will traverse each problem instance in the train "
+"split. For each problem instance, \"batch_size\" independent optimization "
+"environments are constructed and wrapped into a VecEnv, then VecEnv deploies"
+" \"batch_size\" subprocesses to concurrently promote the interactions "
+"between these optimization environments and the meta-level policy. Users "
+"might want to set larger \"batch_size\" to accelerate the learning process. "
+"However, it is better to set an approporiate \"batch_size\" considering the "
+"hardware used for the training. If your CPU has 64 cores, \"batch_size\" "
+"should be no more than 32 to ensure other processes in this hardware are not"
+" blocked. Below we show where to set the \"batch_size\"."
+msgstr ""
+"MetaBox-v2 提供 "
+"[VecEnv](https://github.com/MetaEvo/MetaBox/tree/v2.0.0/src/environment/parallelenv)"
+" 来支持 MetaBBO 训练的并行采样。整体工作流如下：trh Trainer 会遍历训练集 split 中的每个问题实例。对于每个问题实例，会构建 "
+"\\\"batch_size\\\" 个独立的优化环境，并将它们封装到 VecEnv 中，然后 VecEnv 部署 \\\"batch_size\\\""
+" 个子进程来并发促进这些优化环境与元级策略之间的交互。用户可能希望设置更大的 \\\"batch_size\\\" "
+"来加速学习过程。然而，考虑到用于训练的硬件，最好设置一个适当的 \\\"batch_size\\\"。如果你的 CPU 有 64 "
+"核，\\\"batch_size\\\" 不应超过 32，以确保该硬件上的其他进程不会被阻塞。下面我们展示了如何设置 "
+"\\\"batch_size\\\"。"
+
+#: ../../source/guide/Gallery/Flexibly Leverage Parallelism.md:35
+msgid "2. Testing parallelism"
+msgstr "2. 并行测试"
+
+#: ../../source/guide/Gallery/Flexibly Leverage Parallelism.md:39
+msgid "There are five testing modes. "Serial" mode means we test a baseline on a testsuites in a nested loop:"
+msgstr "共有五种测试模式。 “串行”模式意味着我们在嵌套循环中对测试套件进行基线测试："
+
+#: ../../source/guide/Gallery/Flexibly Leverage Parallelism.md:47
+msgid ""
+"The other four modes are parallel modes using Ray to accelerate the testing "
+"process. For example, \"Batch\" mode means we select a batch of problem "
+"instances and distribute their currrent runs to different CPU cores:"
+msgstr ""
+"其他四种模式是使用 Ray 来加速测试过程的并行模式。例如，“Batch”模式意味着我们选择一批问题实例，并将它们的当前运行分配到不同的 CPU 核心："
+
+#: ../../source/guide/Gallery/Flexibly Leverage Parallelism.md:57
+msgid ""
+"\"Full\" mode means we distribute all combination of problem instances and "
+"test runs to different CPU cores (as long as the CPU cores users have are "
+"enough)."
+msgstr "\\\"Full\"意味着我们将所有问题实例和测试运行的不同组合分配到不同的 CPU 核心（只要用户拥有的 CPU 核心足够）。"
+
+#: ../../source/guide/Gallery/Flexibly Leverage Parallelism.md:65
+msgid ""
+"Users should select testing modes according to their hardware. Although "
+"\"Full\" mode introduce significant acceleration if the CPU cores are "
+"enough, it is not the case for trivial users. For other testing modes, see "
+"[Config](https://metaboxdoc.readthedocs.io/en/docs/guide/QuickStart/Config.html)."
+msgstr ""
+"用户应根据其硬件选择测试模式。虽然如果CPU核心足够，“Full”模式可以显著加速，但对于普通用户来说，情况并非如此。其他测试模式请参阅[Config](https://metaboxdoc.readthedocs.io/en/docs/guide/QuickStart/Config.html)。"
+
+#: ../../source/guide/Gallery/index.md:1
+msgid "Developer Guide"
+msgstr "开发者指南"
+
+#: ../../source/guide/Gallery/index.md:2
+msgid "some examples, tutorial and some other advanced usage of Metabox"
+msgstr "一些示例、教程和一些其他高级的 Metabox 使用方法"
+
+#: ../../source/guide/QuickStart/Common ../../source/index.md:84 Usage.md:1
+msgid "Common Usage"
+msgstr "常见用法"
+
+#: ../../source/guide/QuickStart/Config.md:1
+msgid "Config"
+msgstr "配置"
+
+#: ../../source/guide/QuickStart/Config.md:2
+msgid "The Config of Problem Setup"
+msgstr "**问题配置**"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "**Config Name**"
+msgstr "**配置名称**"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "**Description**"
+msgstr "**描述**"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "**Possible Values**"
+msgstr "**可能值**"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "**Default**"
+msgstr "**默认**"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Specify the problem suite for training"
+msgstr "指定用于训练的问题集"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid ""
+"['bbob-10D', 'bbob-30D', 'bbob-torch-10D', 'bbob-torch-30D', 'bbob-"
+"noisy-10D', 'bbob-noisy-30D', 'bbob-noisy-torch-10D', 'bbob-noisy-"
+"torch-30D', 'bbob-surrogate-2D','bbob-surrogate-5D','bbob-surrogate-10D', "
+"'hpo-b', 'lsgo', 'lsgo-torch', 'protein', 'protein-torch', 'uav', 'uav-"
+"torch', 'mmo', 'mmo-torch', 'wcci2020', 'cec2017mto', 'moo-synthetic']"
+msgstr ""
+"['bbob-10D', 'bbob-30D', 'bbob-torch-10D', 'bbob-torch-30D', 'bbob-"
+"noisy-10D', 'bbob-noisy-30D', 'bbob-noisy-torch-10D', 'bbob-noisy-"
+"torch-30D', 'bbob-surrogate-2D','bbob-surrogate-5D','bbob-surrogate-10D', "
+"'hpo-b', 'lsgo', 'lsgo-torch', 'protein', 'protein-torch', 'uav', 'uav-"
+"torch', 'mmo', 'mmo-torch', 'wcci2020', 'cec2017mto', 'moo-synthetic']"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "'bbob'"
+msgstr "bbob"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid ""
+"Specify the problem suite for testing, default to be consistent with "
+"training"
+msgstr "指定用于测试的问题集，默认与训练保持一致"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid ""
+"['None', 'bbob-10D', 'bbob-30D', 'bbob-torch-10D', 'bbob-torch-30D', 'bbob-"
+"noisy-10D', 'bbob-noisy-30D', 'bbob-noisy-torch-10D', 'bbob-noisy-"
+"torch-30D', 'bbob-surrogate-2D','bbob-surrogate-5D','bbob-surrogate-10D', "
+"'hpo-b', 'lsgo', 'lsgo-torch', 'protein', 'protein-torch', 'uav', 'uav-"
+"torch', 'ne', 'mmo', 'mmo-torch', 'wcci2020', 'cec2017mto', 'moo-synthetic']"
+msgstr ""
+"['None', 'bbob-10D', 'bbob-30D', 'bbob-torch-10D', 'bbob-torch-30D', 'bbob-"
+"noisy-10D', 'bbob-noisy-30D', 'bbob-noisy-torch-10D', 'bbob-noisy-"
+"torch-30D', 'bbob-surrogate-2D','bbob-surrogate-5D','bbob-surrogate-10D', "
+"'hpo-b', 'lsgo', 'lsgo-torch', 'protein', 'protein-torch', 'uav', 'uav-"
+"torch', 'ne', 'mmo', 'mmo-torch', 'wcci2020', 'cec2017mto', 'moo-synthetic']"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "None"
+msgstr "None"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Difficulty level for training problems"
+msgstr "训练问题的难度等级"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "['all', 'easy', 'difficult']"
+msgstr "['full', 'easy', 'difficult']"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "'easy'"
+msgstr "'easy'"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid ""
+"Difficulty level for testing problems, default to be consistent with "
+"training"
+msgstr "测试问题的难度级别，默认与训练保持一致"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "User-defined training problem list"
+msgstr "用户自定义训练问题列表"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "User-defined testing problem list"
+msgstr "用户自定义测试问题列表"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Device to use"
+msgstr "设备"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "['cpu', 'cuda']"
+msgstr "['cpu', 'cuda']"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "'cpu'"
+msgstr "'cpu'"
+
+#: ../../source/guide/QuickStart/Config.md:13
+msgid "The Config of Training Mode"
+msgstr "训练模式的配置"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "The maximum learning step for training"
+msgstr "最大学习步长用于训练"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "1500000"
+msgstr "1500000"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Maximum epoch for training"
+msgstr "最大训练轮数"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "100"
+msgstr "100"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Batch size of train set"
+msgstr "训练集的批量大小"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "1"
+msgstr "1"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "agent_save_dir"
+msgstr "agent_save_dir"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Save your own trained agent model"
+msgstr "保存您自己训练好的智能体模型"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "'agent_model/train/'"
+msgstr "agent_model/train/"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "n_checkpoint"
+msgstr "n_checkpoint"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Number of training checkpoints"
+msgstr "训练检查点数量"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "20"
+msgstr "20"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "The parallel processing method for batch env step in training"
+msgstr "批量环境步长训练中的并行处理方法"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "['dummy', 'subproc', 'ray']"
+msgstr "['dummy', 'subproc', 'ray']"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "'subproc'"
+msgstr "subproc"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid ""
+"Training mode：'single' fixed learning step, 'multi' fixed number of problems"
+" encountered"
+msgstr "训练模式：'single' 固定学习步长，'multi' 遇到固定数量的问题"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "End mode"
+msgstr "结束模式"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Disable tensorboard logging"
+msgstr "禁用tensorboard日志记录"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "True or False"
+msgstr "True or False"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "False"
+msgstr "False"
+
+#: ../../source/guide/QuickStart/Config.md:25
+msgid "The Config of Testing Mode"
+msgstr "测试模式的配置"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Batch size of test set"
+msgstr "测试集的批大小"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "The parallel processing mode for testing"
+msgstr "测试的并行处理模式"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "['Full', 'Baseline_Problem', 'Problem_Testrun', 'Batch'，'Seriral']"
+msgstr "['Full', 'Baseline_Problem', 'Problem_Testrun', 'Batch', 'Seriral']"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "The run number of test"
+msgstr "测试的运行次数"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "51"
+msgstr "51"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "The run number of rollout"
+msgstr "运行次数"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "10"
+msgstr "10"
+
+#: ../../source/guide/QuickStart/Config.md:32
+msgid "General Parameters"
+msgstr "通用参数"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Random seed for training and test to fixed agent"
+msgstr "训练和测试的随机种子固定为固定代理"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "3849"
+msgstr "3849"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "full_meta_data"
+msgstr "full_meta_data"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Store the metadata"
+msgstr "存储元数据"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "True"
+msgstr "True"
+
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Logging output"
+msgstr "日志输出"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "Maximum number of evaluation"
+msgstr "最大评估次数"
+
+#: ../../source/guide/QuickStart/Config.md
+msgid "20000"
+msgstr "20000"
+
+#: ../../source/guide/QuickStart/Core Concept.md:1
+msgid "Core Concept"
+msgstr "核心概念"
+
+#: ../../source/guide/QuickStart/Core Concept.md:3
+msgid ""
+"💡 **MetaBox is an all-in-one platform for using and developing the "
+"algorithms in Meta-Black-Box Optimization (MetaBBO)**. 💡"
+msgstr "💡 **MetaBox 是一个用于使用和开发元黑盒优化（MetaBBO）中的算法的集成平台**。 💡"
+
+#: ../../source/guide/QuickStart/Core Concept.md:5
+msgid ""
+"MetaBBO, an emerging research direction in recent years, aims to automate "
+"the design of BBO algorithms by constructing intelligent agents as "
+"replacements for human experts. Its dual-layer architecture synergizes:"
+msgstr "MetaBBO，近年来兴起的一个研究方向，旨在通过构建智能体来替代人类专家，自动设计BBO算法。其双层架构协同工作："
+
+#: ../../source/guide/QuickStart/Core Concept.md:7
+msgid ""
+"Low-level​​: Standard BBO algorithms for solving optimization problems."
+msgstr "低级：用于解决优化问题的标准 BBO 算法。"
+
+#: ../../source/guide/QuickStart/Core Concept.md:8
+msgid ""
+"Meta-level​​: A parameterized AI agent that adjusts low-level algorithms in "
+"real-time based on their optimization status info."
+msgstr "元级：一个参数化的AI代理，根据其优化状态信息实时调整低级算法。"
+
+#: ../../source/guide/QuickStart/Core Concept.md:14
+msgid ""
+"In low-level optimization environment, a BBO optimizer  $\\mathcal{A}$  is "
+"maintained to optimize a problem  $p$  sampled from distribution  "
+"$\\mathcal{P}$ . At each optimization step  $t$ , optimization status "
+"features are extracted from the current optimization process (such as "
+"population and objective values information). Then in meta-level, an "
+"algorithm design policy  $\\pi_{\\theta}$  (with learnable parameters  "
+"$\\theta$) outputs a desired design  $\\omega_{i}^{t}$  by  "
+"$\\omega_{i}^{t}=\\pi_{\\theta}\\left(s_{i}^{t}\\right)$.  $\\mathcal{A}$  "
+"optimizes  $p$  by  $\\omega_{i}^{t}$  for one step. A performance "
+"measurement function  $r_{t}$  is used to evaluate the performance gain "
+"obtained by this algorithm design decision. Suppose  $T$  optimization steps"
+" are allowed for the low-level optimization process, then  $\\pi_{\\theta}$"
+"  is meta-trained to maximize a meta-objective formulated as:  $J(\\theta)$ "
+"= $E_{p \\in \\mathcal{P}}$ \\[ $\\sum_{t=1}^{T} r_{t}$ \\] , which is "
+"expectation of accumulated single step performance gain over all problem "
+"instances in  $\\mathcal{P}$. In practice, a training problem set serves as "
+"Through meta-learning on target problem distribution, MetaBBO shifts from "
+"human-expertise-driven design to data-driven automation, delivering "
+"unprecedented generalization power and design efficiency, and the "
+"performance exceeds that of traditional BBO."
+msgstr ""
+"在低级优化环境中，维护一个 BBO 优化器 $\\mathcal{A}$ 来优化从分布 $\\mathcal{P}$ 中采样的一个问题 "
+"$p$。在每个优化步骤 $t$，从当前优化过程中提取优化状态特征（例如种群和目标值信息）。然后在元级别，一个算法设计策略 "
+"$\\pi_{\\theta}$（具有可学习参数 $\\theta$）通过 "
+"$\\omega_{i}^{t}=\\pi_{\\theta}\\left(s_{i}^{t}\\right)$ 输出一个期望设计 "
+"$\\omega_{i}^{t}$。$\\mathcal{A}$ 通过 $\\omega_{i}^{t}$ 优化 $p$ "
+"一步。使用一个性能测量函数 $r_{t}$ 来评估这个算法设计决策获得的性能提升。假设低级优化过程允许 $T$ 步优化，那么 "
+"$\\pi_{\\theta}$ 通过元训练来最大化一个元目标，该元目标定义为： $J(\\theta)$ = $E_{p \\in "
+"\\mathcal{P}}$ \\[ $\\sum_{t=1}^{T} r_{t}$ \\] ，这是对所有问题实例在 "
+"$\\mathcal{P}$ 中的单步性能提升的期望。在实践中，一个训练问题集作为通过在目标问题分布上进行元学习，MetaBBO "
+"从人类专家驱动设计转变为数据驱动自动化，提供前所未有的泛化能力和设计效率，性能超过传统 BBO。"
+
+#: ../../source/guide/QuickStart/Core Concept.md:17
+msgid "For further exploration:"
+msgstr "对于进一步探索："
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid "Name"
+msgstr "名称"
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid "Describe"
+msgstr "描述"
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid ""
+"[Toward Automated Algorithm Design: A Survey and Practical Guide to Meta-"
+"Black-Box-Optimization](https://arxiv.org/abs/2411.00625)"
+msgstr "[面向自动化算法设计：元黑盒优化的综述与实用指南](https://arxiv.org/abs/2411.00625)"
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid "A comprehensive survey of MetaBBO"
+msgstr "对MetaBBO的全面综述"
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid ""
+"[Meta-Black-Box Optimization for Evolutionary Algorithms: Review and "
+"Perspective](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4956956)"
+msgstr ""
+"[元黑盒优化用于进化算法：综述与展望](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4956956)"
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid "A comprehensive survey of MetaBBO applied to EAs"
+msgstr "对MetaBBO应用于EA的全面综述"
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid ""
+"[MetaBox: A Benchmark Platform for Meta-Black-Box Optimization with "
+"Reinforcement "
+"Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/232eee8ef411a0a316efa298d7be3c2b-Abstract-"
+"Datasets_and_Benchmarks.html)"
+msgstr ""
+"[MetaBox：一个基于强化学习的元黑盒优化基线平台](https://proceedings.neurips.cc/paper_files/paper/2023/hash/232eee8ef411a0a316efa298d7be3c2b-Abstract-"
+"Datasets_and_Benchmarks.html)"
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid "A comprehensive platform of MetaBBO"
+msgstr "一个全面的MetaBBO平台"
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid ""
+"[PlatMetaX: An Integrated MATLAB platform for Meta-Black-Box "
+"Optimization](https://arxiv.org/pdf/2503.22722)"
+msgstr "[PlatMetaX：一个集成化的MATLAB平台用于元黑盒优化](https://arxiv.org/pdf/2503.22722)"
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid "A MATLAB platform of MetaBBO"
+msgstr "一个MetaBBO的MATLAB平台"
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid "[Awesome-MetaBBO](https://github.com/GMC-DRL/Awesome-MetaBBO)"
+msgstr "[Awesome-MetaBBO](https://github.com/GMC-DRL/Awesome-MetaBBO)"
+
+#: ../../source/guide/QuickStart/Core Concept.md
+msgid ""
+"A repository of MetaBBO-related research papers and code implementations"
+msgstr "一个包含MetaBBO相关研究论文和代码实现的仓库"
+
+#: ../../source/guide/QuickStart/Installation.md:1 ../../source/index.md:68
+msgid "Installation"
+msgstr "安装"
+
+#: ../../source/guide/QuickStart/Installation.md:4
+msgid ""
+"Below we install a cpu-version torch for you, if you need install any other "
+"versions, \\ see [torch](https://pytorch.org/get-started) and replace the "
+"corresponding installation instruction below."
+msgstr ""
+"下面我们为您安装了一个 cpu 版本的 torch，如果您需要安装其他版本，请参考 [torch](https://pytorch.org/get-"
+"started) 并替换下面的相应安装指令。"
+
+#: ../../source/guide/QuickStart/Running Logic.md:1
+msgid "Running Logic"
+msgstr "运行逻辑"
+
+#: ../../source/guide/QuickStart/Running Logic.md:2
+msgid ""
+"Based on MetaBox’s fully automatic train-test-log workflow, **Unification, "
+"Efficiency and Flexible** are the core concepts of MetaBox-v2.0"
+msgstr "基于MetaBox的完全自动训练-测试-日志工作流，**统一、高效和灵活**是MetaBox-v2.0的核心概念。"
+
+#: ../../source/guide/QuickStart/Running Logic.md:3
+msgid ""
+"**Unification:** MetaBox-v2.0 provides a unified interface for various "
+"MetaBBO (MetaBBO-RL、MetaBBO-SL、MetaBBO-ICL、MetaBBO-NE) and test suites for "
+"different types of problems."
+msgstr ""
+"**统一性：** MetaBox-v2.0 提供了一个统一的接口，用于各种 MetaBBO（MetaBBO-RL、MetaBBO-SL、MetaBBO-"
+"ICL、MetaBBO-NE）以及不同类型问题的测试套件。"
+
+#: ../../source/guide/QuickStart/Running Logic.md:4
+msgid ""
+"**Efficiency:**  Parallelization enables MetaBox-v2.0 to train and test "
+"efficiently. As the first development exemplar to enable parallel training "
+"for MetaBBO, MetaBox-v2.0 supports training speeds up to 10 times faster "
+"than MetaBox-v1.0. Various Ray-based parallel modes allow users to fully "
+"utilize their computing resources to accelerate testing."
+msgstr ""
+"**效率：** 并行化使 MetaBox-v2.0 能够高效地训练和测试。作为首个支持 MetaBBO 并行训练的开发范例，MetaBox-v2.0 "
+"支持比 MetaBox-v1.0 快 10 倍的训练速度。多种基于 Ray 的并行模式允许用户充分利用其计算资源来加速测试。"
+
+#: ../../source/guide/QuickStart/Running Logic.md:5
+msgid ""
+"**Flexible:** Taking the provided Evaluation Metrics as an example, by "
+"recording Metadata, users can easily and flexibly visualize these evaluation"
+" metrics across different MetaBBO methods for various types of problems, "
+"without being constrained by specific problems or approaches. There are even"
+" more flexible usages, including but not limited to leveraging existing "
+"resources from other platforms (such as EvoX) to extend MetaBox’s current "
+"methods and problem sets. For more information, please refer to the Gallery!"
+msgstr ""
+"**灵活:** "
+"以提供的评估指标为例，通过记录元数据，用户可以轻松灵活地跨不同的MetaBBO方法可视化这些评估指标，而不会受到特定问题或方法的限制。还有更灵活的使用方式，包括但不限于利用其他平台（如EvoX）的现有资源来扩展MetaBox的当前方法和问题集。更多详情，请参考Gallery！"
+
+#: ../../source/guide/QuickStart/Running Logic.md:7
+msgid ""
+"Based on the above three features, users only need to specify the target "
+"problem and the MetaBBO algorithm to be used. MetaBox will then provide "
+"fully automated training and testing, and ultimately allow flexible "
+"visualization of results using the recorded Metadata."
+msgstr ""
+"基于上述三个特性，用户只需指定目标问题和要使用的MetaBBO算法。MetaBox将提供全自动的训练和测试，并最终允许用户使用记录的Metadata对结果进行灵活的可视化。"
+
+#: ../../source/guide/QuickStart/Test.md:1
+msgid "Test"
+msgstr "测试"
+
+#: ../../source/guide/QuickStart/Test.md:4
+msgid ""
+"**The following code demonstrates the core test logic.** Numerous "
+"configurable options are available — refer to **Quickstart > "
+"[Config](https://metaboxdoc.readthedocs.io/en/stable/guide/QuickStart/Config.html)**"
+" for details."
+msgstr ""
+"以下代码展示了核心测试逻辑。提供了许多可配置选项——详情请参考**快速入门 > "
+"[配置](https://metaboxdoc.readthedocs.io/en/stable/guide/QuickStart/Config.html)**。"
+
+#: ../../source/guide/QuickStart/Test.md:8
+msgid ""
+"The following is the code specific to Linux. If you are using Windows, "
+"please add: \\ ```if __name__ == \"__main__\":```"
+msgstr "以下是针对Linux系统的代码。如果您使用的是Windows，请添加： ```if __name__ == \"__main__\":```"
+
+#: ../../source/guide/QuickStart/Test.md:13
+msgid "🧪 General Tester Code"
+msgstr "🧪 一般测试代码"
+
+#: ../../source/guide/QuickStart/Test.md:55
+msgid "🎯 Example: Test GLEET and CMAES on COCO's BBOB (10D, easy)"
+msgstr "🎯 示例：在COCO的BBOB（10D，简单）上测试GLEET和CMAES"
+
+#: ../../source/guide/QuickStart/Test.md:98
+msgid ""
+"**Test your algorithm on MetaBox** — refer to  **Developer Guide > [Develop "
+"your "
+"MetaBBO](https://metaboxdoc.readthedocs.io/en/stable/guide/Gallery/Develop%20your%20MetaBBO.html)**"
+" for details."
+msgstr ""
+"**在MetaBox上测试你的算法** — 详细信息请参考 **开发者指南 > "
+"[开发你的MetaBBO](https://metaboxdoc.readthedocs.io/en/stable/guide/Gallery/Develop%20your%20MetaBBO.html)**。"
+
+#: ../../source/guide/QuickStart/Train.md:1
+msgid "Train"
+msgstr "训练"
+
+#: ../../source/guide/QuickStart/Train.md:4
+msgid ""
+"**The following code demonstrates the core training logic.** Numerous "
+"configurable options are available — refer to **Quickstart > "
+"[Config](https://metaboxdoc.readthedocs.io/en/stable/guide/QuickStart/Config.html#config)**"
+" for details."
+msgstr ""
+"以下代码展示了核心的训练逻辑。有许多可配置的选项——详情请参考**快速入门 > "
+"[配置](https://metaboxdoc.readthedocs.io/en/stable/guide/QuickStart/Config.html#config)**。"
+
+#: ../../source/guide/QuickStart/Train.md:9
+msgid ""
+"The following is the code specific to Linux. If you are using Windows, "
+"please add:  \\ ```if __name__ == \"__main__\":```"
+msgstr "以下是针对Linux系统的代码。如果你使用的是Windows，请添加：  ```if __name__ == \"__main__\":```"
+
+#: ../../source/guide/QuickStart/Train.md:15
+msgid "🧪 General Training Code"
+msgstr "🧪 常规训练代码"
+
+#: ../../source/guide/QuickStart/Train.md:43 ../../source/index.md:113
+msgid ""
+"If you want to check out the visualized information of the training "
+"progress, run following code to start training logger."
+msgstr "如果您想查看训练进度的可视化信息，运行以下代码以启动训练日志记录器。"
+
+#: ../../source/guide/QuickStart/Train.md:49
+msgid "🎯 Example: Train GLEET on COCO's BBOB (10D, easy)"
+msgstr "🎯 示例：在COCO的BBOB（10D，简单）上训练GLEET"
+
+#: ../../source/guide/QuickStart/Train.md:75
+msgid ""
+"**Train your algorithm on MetaBox** — refer to  **Developer Guide > [Develop"
+" your "
+"MetaBBO](https://metaboxdoc.readthedocs.io/en/stable/guide/Gallery/Develop%20your%20MetaBBO.html#develop-"
+"your-metabbo)** for details."
+msgstr ""
+"**在MetaBox上训练你的算法** — 详细信息请参考 **开发者指南 > "
+"[开发你的MetaBBO](https://metaboxdoc.readthedocs.io/en/stable/guide/Gallery/Develop%20your%20MetaBBO.html#develop-"
+"your-metabbo)**。"
+
+#: ../../source/guide/QuickStart/index.md:1
+msgid "Quickstart"
+msgstr "快速入门"
+
+#: ../../source/guide/QuickStart/index.md:14
+msgid "🚀 Hi！Here is **the fastest way to begin your journey of MetaBox**. 🚀"
+msgstr "🚀 你好！这里是最快开始你的MetaBox之旅的方法。 🚀"
+
+#: ../../source/index.md:1
+msgid "Welcome to Metabox's documentation"
+msgstr "欢迎使用Metabox的文档"
+
+#: ../../source/index.md:58
+msgid ""
+"[![NeurIPS](https://img.shields.io/badge/NeurIPS-2023-b31b1b.svg)]([https://proceedings.neurips.cc/paper_files/paper/2023/hash/232eee8ef411a0a316efa298d7be3c2b-Abstract-"
+"Datasets_and_Benchmarks.html]) **MetaBox-v1 has been accepted as an oral "
+"presentation at NeurIPS 2023!**"
+msgstr ""
+"[![NeurIPS](https://img.shields.io/badge/NeurIPS-2023-b31b1b.svg)]([https://proceedings.neurips.cc/paper_files/paper/2023/hash/232eee8ef411a0a316efa298d7be3c2b-Abstract-"
+"Datasets_and_Benchmarks.html]) **MetaBox-v1 已被接受为 NeurIPS 2023 的口头报告！**"
+
+#: ../../source/index.md:64
+msgid ""
+"we propose MetaBox 2.0 version (MetaBox-v2) as a major upgradation of "
+"[MetaBox-v1](https://github.com/MetaEvo/MetaBox/tree/v1.0.0). MetaBox-v2 now"
+" supports plentiful optimization scenarios to embrace users from single-"
+"objective optimization, multi-objective optimization, multi-modal "
+"optimization, multi-task optimization and etc. Correspondingly, **18 "
+"optimization problem sets** (synthetic + realistic), **1900+ problem "
+"instances** and **36 baseline methods** (traditional optimizers + up-to-date"
+" MetaBBOs) are reproduced within MetaBox-v2 to assist various research ideas"
+" and comprehensive comparison. To address MetaBBO's inherent efficiency "
+"issue, we have optimized low-level implementation of MetaBox-v2 to support "
+"parallel meta-training and evaluation, which reduces the running cost from "
+"days to hours. More importantly, we have optimized MetaBox-v2's sourcecode "
+"to support **sufficient development flexbility**, with clear and sound "
+"tutotials correspondingly. Enjoy your journey of learning and using MetaBBO "
+"from here!"
+msgstr ""
+"我们提出了 MetaBox 2.0 版本（MetaBox-v2）作为 "
+"[MetaBox-v1](https://github.com/MetaEvo/MetaBox/tree/v1.0.0) "
+"的重要升级。MetaBox-v2 现在支持丰富的优化场景，以涵盖从单目标优化、多目标优化、多模态优化、多任务优化等等的用户。相应地，**18 "
+"个优化问题集**（合成 + 真实）、**1900+ 问题实例**和**36 个基线方法**（传统优化器 + 最新的 MetaBBOs）在 "
+"MetaBox-v2 中被复现，以协助各种研究思路和全面比较。为了解决 MetaBBO 的固有效率问题，我们对 MetaBox-v2 "
+"的底层实现进行了优化，以支持并行元训练和评估，将运行成本从天缩短到小时。更重要的是，我们对 MetaBox-v2 "
+"的源代码进行了优化，以支持**足够的开发灵活性**，并提供了清晰且完善的教程。从这里开始，享受学习和使用 MetaBBO 的旅程吧！"
+
+#: ../../source/index.md:66
+msgid "Quick Start"
+msgstr "快速入门"
+
+#: ../../source/index.md:70
+msgid ""
+"Below we install a cpu-version torch for you, if you need "
+"install any other versions, \\ see [torch](https://pytorch.org/get-started) "
+"and replace the corresponding installation instruction below."
+msgstr ""
+"[!Important] 下面我们为您安装了一个 cpu 版本的 torch，如果您需要安装其他版本，\\ 请参考 "
+"[torch](https://pytorch.org/get-started) 并替换下面的相应安装说明。"
+
+#: ../../source/index.md:86
+msgid "Train a MetaBBO baseline"
+msgstr "训练MetaBBO基线"
+
+#: ../../source/index.md:88
+msgid ""
+"create your_dir, then create a your_train.py file in your_dir, write "
+"following codes into your_train.py."
+msgstr ""
+"创建你的`your_dir`，然后在你的`your_dir`中创建一个`your_train.py`文件，将以下代码写入`your_train.py`。"
+
+#: ../../source/index.md:120
+msgid "Test BBO/MetaBBO baselines"
+msgstr "测试 BBO/MetaBBO 基线"
+
+#: ../../source/index.md:162
+msgid ""
+"By default, MetaBox would automatically generate various visualized "
+"experimental results in your_dir/output/test/, enjoy these useful analysis "
+"results!"
+msgstr ""
+"默认情况下，MetaBox 会自动在 `your_dir/output/test/` 目录下生成各种可视化的实验结果，享受这些有用的分析结果吧！"
+
+#: ../../source/index.md:164
+msgid "High-level Development Usage"
+msgstr "高级开发使用"
+
+#: ../../source/index.md:166
+msgid ""
+"We sincerely suggest researchers with interests to check out **[Online "
+"Documentation](https://metaboxdoc.readthedocs.io/en/latest/index.html)** for"
+" further flexible usege of MetaBox-v2, such as implementing your own "
+"MetaBBO, customized experimental design & analysis, using pre-collected "
+"metadata and seamless API calling with other famous optimization repos."
+msgstr ""
+"我们真诚建议有兴趣的研究人员查看 "
+"**[在线文档](https://metaboxdoc.readthedocs.io/en/latest/index.html)**，以进一步灵活使用 "
+"MetaBox-v2，例如实现您自己的 MetaBBO、定制实验设计与分析、使用预收集的元数据以及与其他著名优化库无缝调用 API。"
+
+#: ../../source/index.md:168
+msgid "Available Optimization Problem Set in MetaBox"
+msgstr "MetaBox中可用的优化问题集"
+
+#: ../../source/index.md:294
+msgid "Available BBO/MetaBBO Baselines in MetaBox"
+msgstr "可用的MetaBox中BBO/MetaBBO基线"
+
+#: ../../source/index.md:562
+msgid "Citing MetaBox"
+msgstr "引用MetaBox"
+
+#: ../../source/index.md:564
+msgid ""
+"The PDF version of the paper is available "
+"[here](https://arxiv.org/abs/2310.08252). If you find our MetaBox useful, "
+"please cite it in your publications or projects."
+msgstr ""
+"论文的PDF版本可以在 [这里](https://arxiv.org/abs/2310.08252) "
+"获取。如果你觉得MetaBox很有用，请在你的出版物或项目中引用它。"
+
+#: ../../source/index.md:576
+msgid "😁Contact Us"
+msgstr "😁联系我们"
+
+#: ../../source/index.md:584
+msgid ""
+"Here is our [homepage](https://metaevo.github.io/) and "
+"[github](https://github.com/MetaEvo). **🥰🥰🥰Please feel free to contact "
+"us—any suggestions are welcome!**"
+msgstr ""
+"这是我们的 [主页](https://metaevo.github.io/) 和 "
+"[github](https://github.com/MetaEvo)。**🥰🥰🥰请随时联系我们——任何建议都受欢迎！**"
+
+#: ../../source/index.md:586
+msgid "If you have any question or want to contact us："
+msgstr "如果你有任何问题或想要联系我们："
+
+#: ../../source/index.md:588
+msgid "🌱Fork, Add, and Merge"
+msgstr "🌱分支，添加，合并"
+
+#: ../../source/index.md:589
+msgid "❓️Report an [issue](https://github.com/MetaEvo/MetaBox/issues)"
+msgstr "❓️报告一个[问题](https://github.com/MetaEvo/MetaBox/issues)"
+
+#: ../../source/index.md:590
+msgid ""
+"📧Contact WenJie Qiu ([wukongqwj@gmail.com](mailto:wukongqwj@gmail.com))"
+msgstr "📧联系WenJie Qiu（[wukongqwj@gmail.com](mailto:wukongqwj@gmail.com)）"
+
+#: ../../source/index.md:591
+msgid ""
+"🚨**We warmly invite you to join our QQ group for further communication "
+"(Group Number: 952185139).**"
+msgstr "🚨**我们诚挚邀请您加入我们的QQ群进行进一步交流（群号：952185139）。**"
