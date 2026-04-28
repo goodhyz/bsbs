@@ -1,0 +1,2001 @@
+{
+  "_meta": {
+    "source_dir": "src/metaevobox/model/bbob-10D/difficult",
+    "n_models": 16,
+    "note": "Auto-extracted from agent checkpoints. config = training-time argparse.Namespace; networks = nn.Module structure + parameter counts."
+  },
+  "models": {
+    "B2OPT": {
+      "agent_class": "metaevobox.baseline.metabbo.b2opt.B2OPT",
+      "config": {
+        "train_problem": "bbob-torch-10D",
+        "test_problem": "bbob-torch-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "B2OPT",
+        "train_optimizer": "B2OPT_Optimizer",
+        "agent_save_dir": "agent_model/train/B2OPT/20250422T181304_bbob-torch-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250422T181304_bbob-torch-10D_difficult",
+        "test_log_dir": "output/test/20250422T181304_bbob-torch-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250422T181304_bbob-torch-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250422T181304_bbob-torch-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250422T181304_bbob-torch-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "optimizer": "Adam",
+        "lr": 0.01,
+        "lr_step_size": 100,
+        "lr_decay": 0.9,
+        "lamda": 0.005,
+        "max_grad_norm": 10,
+        "hidden_dim": 100,
+        "ws": false
+      },
+      "training_progress": {
+        "learning_time": 80,
+        "cur_checkpoint": 2
+      },
+      "optimizer": {
+        "class": "Adam",
+        "param_groups": [
+          {
+            "lr": 0.01,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null,
+            "initial_lr": 0.01
+          }
+        ]
+      },
+      "networks": {
+        "Opt": {
+          "class": "Policy",
+          "structure": "Policy(\n  (ob): ModuleList(\n    (0-198): 199 x OB(\n      (trm): AttnWithFit(\n        (q): Sequential(\n          (0): Linear(in_features=1, out_features=100, bias=True)\n        )\n        (k): Sequential(\n          (0): Linear(in_features=1, out_features=100, bias=True)\n        )\n      )\n      (mut): Sequential(\n        (0): Linear(in_features=10, out_features=10, bias=True)\n        (1): ReLU()\n        (2): Linear(in_features=10, out_features=10, bias=True)\n      )\n    )\n  )\n)",
+          "n_parameters": 2173478,
+          "n_trainable": 2173478,
+          "children": {
+            "ob": "ModuleList"
+          }
+        }
+      }
+    },
+    "DEDDQN": {
+      "agent_class": "metaevobox.baseline.metabbo.deddqn.DEDDQN",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "DEDDQN",
+        "train_optimizer": "DEDDQN_Optimizer",
+        "agent_save_dir": "agent_model/train/DEDDQN/20250420T143451_bbob-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [
+          "CMAES",
+          "Random_search"
+        ],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250420T143451_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250420T143451_bbob-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250420T143451_bbob-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250420T143451_bbob-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250420T143451_bbob-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "state_size": 99,
+        "n_act": 4,
+        "lr_model": 0.0001,
+        "lr_decay": 1,
+        "batch_size": 64,
+        "epsilon": 0.1,
+        "gamma": 0.99,
+        "target_update_interval": 1000,
+        "memory_size": 100000,
+        "warm_up_size": 10000,
+        "net_config": [
+          {
+            "in": 99,
+            "out": 100,
+            "drop_out": 0,
+            "activation": "ReLU"
+          },
+          {
+            "in": 100,
+            "out": 100,
+            "drop_out": 0,
+            "activation": "ReLU"
+          },
+          {
+            "in": 100,
+            "out": 100,
+            "drop_out": 0,
+            "activation": "ReLU"
+          },
+          {
+            "in": 100,
+            "out": 100,
+            "drop_out": 0,
+            "activation": "ReLU"
+          },
+          {
+            "in": 100,
+            "out": 4,
+            "drop_out": 0,
+            "activation": "None"
+          }
+        ],
+        "max_grad_norm": Infinity,
+        "optimizer": "Adam",
+        "lr_scheduler": "ExponentialLR",
+        "criterion": "MSELoss",
+        "F": 0.5,
+        "Cr": 1.0,
+        "NP": 100,
+        "gen_max": 10,
+        "W": 50
+      },
+      "training_progress": {
+        "learning_time": 14327376,
+        "cur_checkpoint": 18
+      },
+      "optimizer": {
+        "class": "Adam",
+        "param_groups": [
+          {
+            "lr": 0.0001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          }
+        ]
+      },
+      "networks": {
+        "model": {
+          "class": "MLP",
+          "structure": "MLP(\n  (net): Sequential(\n    (layer0-linear): Linear(in_features=99, out_features=100, bias=True)\n    (layer0-drop_out): Dropout(p=0, inplace=False)\n    (layer0-activation): ReLU()\n    (layer1-linear): Linear(in_features=100, out_features=100, bias=True)\n    (layer1-drop_out): Dropout(p=0, inplace=False)\n    (layer1-activation): ReLU()\n    (layer2-linear): Linear(in_features=100, out_features=100, bias=True)\n    (layer2-drop_out): Dropout(p=0, inplace=False)\n    (layer2-activation): ReLU()\n    (layer3-linear): Linear(in_features=100, out_features=100, bias=True)\n    (layer3-drop_out): Dropout(p=0, inplace=False)\n    (layer3-activation): ReLU()\n    (layer4-linear): Linear(in_features=100, out_features=4, bias=True)\n    (layer4-drop_out): Dropout(p=0, inplace=False)\n  )\n)",
+          "n_parameters": 40704,
+          "n_trainable": 40704,
+          "children": {
+            "net": "Sequential"
+          }
+        },
+        "target_model": {
+          "class": "MLP",
+          "structure": "MLP(\n  (net): Sequential(\n    (layer0-linear): Linear(in_features=99, out_features=100, bias=True)\n    (layer0-drop_out): Dropout(p=0, inplace=False)\n    (layer0-activation): ReLU()\n    (layer1-linear): Linear(in_features=100, out_features=100, bias=True)\n    (layer1-drop_out): Dropout(p=0, inplace=False)\n    (layer1-activation): ReLU()\n    (layer2-linear): Linear(in_features=100, out_features=100, bias=True)\n    (layer2-drop_out): Dropout(p=0, inplace=False)\n    (layer2-activation): ReLU()\n    (layer3-linear): Linear(in_features=100, out_features=100, bias=True)\n    (layer3-drop_out): Dropout(p=0, inplace=False)\n    (layer3-activation): ReLU()\n    (layer4-linear): Linear(in_features=100, out_features=4, bias=True)\n    (layer4-drop_out): Dropout(p=0, inplace=False)\n  )\n)",
+          "n_parameters": 40704,
+          "n_trainable": 40704,
+          "children": {
+            "net": "Sequential"
+          }
+        },
+        "criterion": {
+          "class": "MSELoss",
+          "structure": "MSELoss()",
+          "n_parameters": 0,
+          "n_trainable": 0
+        }
+      }
+    },
+    "DEDQN": {
+      "agent_class": "metaevobox.baseline.metabbo.dedqn.DEDQN",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "DEDQN",
+        "train_optimizer": "DEDQN_Optimizer",
+        "agent_save_dir": "agent_model/train/DEDQN/20250420T144653_bbob-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [
+          "CMAES",
+          "Random_search"
+        ],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250420T144653_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250420T144653_bbob-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250420T144653_bbob-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250420T144653_bbob-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250420T144653_bbob-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "state_size": 4,
+        "n_act": 3,
+        "mlp_config": [
+          {
+            "in": 4,
+            "out": 10,
+            "drop_out": 0,
+            "activation": "ReLU"
+          },
+          {
+            "in": 10,
+            "out": 10,
+            "drop_out": 0,
+            "activation": "ReLU"
+          },
+          {
+            "in": 10,
+            "out": 3,
+            "drop_out": 0,
+            "activation": "None"
+          }
+        ],
+        "lr_model": 0.0001,
+        "lr_decay": 1,
+        "epsilon": 0.1,
+        "gamma": 0.8,
+        "memory_size": 100,
+        "batch_size": 64,
+        "warm_up_size": 64,
+        "max_grad_norm": Infinity,
+        "optimizer": "AdamW",
+        "lr_scheduler": "ExponentialLR",
+        "criterion": "MSELoss",
+        "NP": 100,
+        "F": 0.5,
+        "Cr": 0.5,
+        "rwsteps": 100
+      },
+      "training_progress": {
+        "learning_time": 7917,
+        "cur_checkpoint": 2
+      },
+      "optimizer": {
+        "class": "AdamW",
+        "param_groups": [
+          {
+            "lr": 0.0001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0.01,
+            "amsgrad": false,
+            "foreach": null,
+            "maximize": false,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          }
+        ]
+      },
+      "networks": {
+        "model": {
+          "class": "MLP",
+          "structure": "MLP(\n  (net): Sequential(\n    (layer0-linear): Linear(in_features=4, out_features=10, bias=True)\n    (layer0-drop_out): Dropout(p=0, inplace=False)\n    (layer0-activation): ReLU()\n    (layer1-linear): Linear(in_features=10, out_features=10, bias=True)\n    (layer1-drop_out): Dropout(p=0, inplace=False)\n    (layer1-activation): ReLU()\n    (layer2-linear): Linear(in_features=10, out_features=3, bias=True)\n    (layer2-drop_out): Dropout(p=0, inplace=False)\n  )\n)",
+          "n_parameters": 193,
+          "n_trainable": 193,
+          "children": {
+            "net": "Sequential"
+          }
+        },
+        "criterion": {
+          "class": "MSELoss",
+          "structure": "MSELoss()",
+          "n_parameters": 0,
+          "n_trainable": 0
+        }
+      }
+    },
+    "GLEET": {
+      "agent_class": "metaevobox.baseline.metabbo.gleet.GLEET",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "GLEET",
+        "train_optimizer": "GLEET_Optimizer",
+        "agent_save_dir": "agent_model/train/GLEET/20250420T143836_bbob-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [
+          "CMAES",
+          "Random_search"
+        ],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250420T143836_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250420T143836_bbob-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250420T143836_bbob-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250420T143836_bbob-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250420T143836_bbob-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "optimizer": "Adam",
+        "lr_actor": 0.0001,
+        "lr_critic": 0.0001,
+        "lr_scheduler": "ExponentialLR",
+        "embedding_dim": 16,
+        "encoder_head_num": 4,
+        "decoder_head_num": 4,
+        "n_encode_layers": 1,
+        "normalization": "layer",
+        "v_range": 6,
+        "hidden_dim": 16,
+        "node_dim": 9,
+        "hidden_dim1_actor": 32,
+        "hidden_dim2_actor": 8,
+        "max_sigma": 0.7,
+        "min_sigma": 0.01,
+        "hidden_dim1_critic": 32,
+        "hidden_dim2_critic": 16,
+        "gamma": 0.999,
+        "n_step": 10,
+        "K_epochs": 3,
+        "eps_clip": 0.1,
+        "lr_model": 0.0001,
+        "lr_decay": 0.9862327,
+        "max_grad_norm": 0.1
+      },
+      "training_progress": {
+        "learning_time": 7200,
+        "cur_checkpoint": 3
+      },
+      "optimizer": {
+        "class": "Adam",
+        "param_groups": [
+          {
+            "lr": 0.0001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          },
+          {
+            "lr": 0.0001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          }
+        ]
+      },
+      "networks": {
+        "actor": {
+          "class": "Actor",
+          "structure": "Actor(\n  (embedder): EmbeddingNet(\n    (embedder): Linear(in_features=9, out_features=16, bias=False)\n  )\n  (encoder): mySequential(\n    (0): MultiHeadEncoder(\n      (MHA_sublayer): MultiHeadAttentionsubLayer(\n        (MHA): MultiHeadAttention()\n        (Norm): Normalization()\n      )\n      (FFandNorm_sublayer): FFandNormsubLayer(\n        (FF): Sequential(\n          (0): Linear(in_features=16, out_features=16, bias=True)\n          (1): ReLU(inplace=True)\n          (2): Linear(in_features=16, out_features=16, bias=True)\n        )\n        (Norm): Normalization()\n      )\n    )\n  )\n  (embedder_for_decoder): EmbeddingNet(\n    (embedder): Linear(in_features=32, out_features=16, bias=False)\n  )\n  (decoder): mySequential(\n    (0): MultiHeadEncoder(\n      (MHA_sublayer): MultiHeadAttentionsubLayer(\n        (MHA): MultiHeadAttention()\n        (Norm): Normalization()\n      )\n      (FFandNorm_sublayer): FFandNormsubLayer(\n        (FF): Sequential(\n          (0): Linear(in_features=16, out_features=16, bias=True)\n          (1): ReLU(inplace=True)\n          (2): Linear(in_features=16, out_features=16, bias=True)\n        )\n        (Norm): Normalization()\n      )\n    )\n  )\n  (mu_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=16, out_features=32, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): LeakyReLU(negative_slope=0.01)\n      (layer1-linear): Linear(in_features=32, out_features=8, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n      (layer1-activation): LeakyReLU(negative_slope=0.01)\n      (layer2-linear): Linear(in_features=8, out_features=1, bias=True)\n      (layer2-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n  (sigma_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=16, out_features=32, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): LeakyReLU(negative_slope=0.01)\n      (layer1-linear): Linear(in_features=32, out_features=8, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n      (layer1-activation): LeakyReLU(negative_slope=0.01)\n      (layer2-linear): Linear(in_features=8, out_features=1, bias=True)\n      (layer2-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n)",
+          "n_parameters": 5426,
+          "n_trainable": 5426,
+          "children": {
+            "embedder": "EmbeddingNet",
+            "encoder": "mySequential",
+            "embedder_for_decoder": "EmbeddingNet",
+            "decoder": "mySequential",
+            "mu_net": "MLP",
+            "sigma_net": "MLP"
+          }
+        },
+        "critic": {
+          "class": "Critic",
+          "structure": "Critic(\n  (value_head): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=16, out_features=32, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): LeakyReLU(negative_slope=0.01)\n      (layer1-linear): Linear(in_features=32, out_features=16, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n      (layer1-activation): LeakyReLU(negative_slope=0.01)\n      (layer2-linear): Linear(in_features=16, out_features=1, bias=True)\n      (layer2-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n)",
+          "n_parameters": 1089,
+          "n_trainable": 1089,
+          "children": {
+            "value_head": "MLP"
+          }
+        }
+      }
+    },
+    "GLHF": {
+      "agent_class": "metaevobox.baseline.metabbo.glhf.GLHF",
+      "config": {
+        "train_problem": "bbob-torch-10D",
+        "test_problem": "bbob-torch-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "GLHF",
+        "train_optimizer": "GLHF_Optimizer",
+        "agent_save_dir": "agent_model/train/GLHF/20250422T222342_bbob-torch-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250422T222342_bbob-torch-10D_difficult",
+        "test_log_dir": "output/test/20250422T222342_bbob-torch-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250422T222342_bbob-torch-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250422T222342_bbob-torch-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250422T222342_bbob-torch-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "optimizer": "Adam",
+        "lr": 0.0001,
+        "lamda": 0.005,
+        "max_grad_norm": Infinity,
+        "muthdim": 1000,
+        "crhdim": 4,
+        "selmod": "1-to-1",
+        "cr_policy": "learned"
+      },
+      "training_progress": {
+        "learning_time": 71640,
+        "cur_checkpoint": 9
+      },
+      "optimizer": {
+        "class": "Adam",
+        "param_groups": [
+          {
+            "lr": 0.0001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          }
+        ]
+      },
+      "networks": {
+        "Pom": {
+          "class": "Policy",
+          "structure": "Policy(\n  (sm): SMBND()\n  (agen): GBMutModel(\n    (fq1): Sequential(\n      (0): Linear(in_features=100, out_features=1000, bias=True)\n      (1): Tanh()\n    )\n    (fk1): Sequential(\n      (0): Linear(in_features=100, out_features=1000, bias=True)\n      (1): Tanh()\n    )\n    (w): Sequential(\n      (0): Linear(in_features=2, out_features=100, bias=True)\n      (1): Tanh()\n    )\n  )\n  (crgen): GBLearnCrRate(\n    (net): Sequential(\n      (0): Linear(in_features=3, out_features=4, bias=True)\n      (1): ReLU()\n      (2): LayerNorm((4,), eps=1e-05, elementwise_affine=True)\n      (3): Linear(in_features=4, out_features=1, bias=True)\n      (4): Sigmoid()\n    )\n  )\n)",
+          "n_parameters": 202329,
+          "n_trainable": 202329,
+          "children": {
+            "sm": "SMBND",
+            "agen": "GBMutModel",
+            "crgen": "GBLearnCrRate"
+          }
+        }
+      }
+    },
+    "LDE": {
+      "agent_class": "metaevobox.baseline.metabbo.lde.LDE",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "upperbound": 5,
+        "max_learning_step": 1000000000.0,
+        "max_epoch": 100,
+        "train_batch_size": 16,
+        "agent_save_dir": "agent_model/train/LDE/20250523T115931_bbob-10D_difficult",
+        "n_checkpoint": 20,
+        "train_parallel_mode": "subproc",
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "no_tb": false,
+        "test_batch_size": 1,
+        "test_parallel_mode": "Batch",
+        "baselines": null,
+        "test_run": 51,
+        "rollout_run": 10,
+        "seed": 3849,
+        "full_meta_data": false,
+        "log_dir": "output/",
+        "n_logpoint": 50,
+        "maxFEs": 20000,
+        "run_time": "20250523T115931_bbob-10D_difficult",
+        "train_name": "20250523T115931_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250523T115931",
+        "rollout_log_dir": "output/rollout/20250523T115931",
+        "mgd_test_log_dir": "output/mgd_test/20250523T115931",
+        "mte_test_log_dir": "output/mte_test/20250523T115931",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "NP": 50,
+        "TRAJECTORY_NUM": 20,
+        "TRAJECTORY_LENGTH": 50,
+        "CELL_SIZE": 50,
+        "BINS": 5,
+        "LAYERS_NUM": 1,
+        "lr_model": 0.005,
+        "lr_decay": 1,
+        "gamma": 0.99,
+        "output_dim_actor": 100,
+        "action_shape": [
+          1,
+          16,
+          100
+        ],
+        "node_dim": 60,
+        "optimizer": "Adam",
+        "max_grad_norm": Infinity,
+        "P_INI": 1,
+        "P_NUM_MIN": 2,
+        "P_MIN": 0.04
+      },
+      "training_progress": {
+        "learning_time": 200,
+        "cur_checkpoint": 5
+      },
+      "optimizer": {
+        "class": "Adam",
+        "param_groups": [
+          {
+            "lr": 0.005,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          }
+        ]
+      },
+      "networks": {
+        "model": {
+          "class": "PolicyNet",
+          "structure": "PolicyNet(\n  (_PolicyNet__lstm): LSTM(60, 50)\n  (_PolicyNet__mu): Linear(in_features=50, out_features=100, bias=True)\n  (_PolicyNet__sigma): Linear(in_features=50, out_features=100, bias=True)\n)",
+          "n_parameters": 32600,
+          "n_trainable": 32600,
+          "children": {
+            "_PolicyNet__lstm": "LSTM",
+            "_PolicyNet__mu": "Linear",
+            "_PolicyNet__sigma": "Linear"
+          }
+        }
+      }
+    },
+    "LES": {
+      "agent_class": "metaevobox.baseline.metabbo.les.LES",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "upperbound": 5,
+        "max_learning_step": 1000000000.0,
+        "max_epoch": 100,
+        "train_batch_size": 16,
+        "agent_save_dir": "agent_model/train/LES/20250523T131522_bbob-10D_difficult",
+        "n_checkpoint": 20,
+        "train_parallel_mode": "subproc",
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "no_tb": false,
+        "test_batch_size": 1,
+        "test_parallel_mode": "Batch",
+        "baselines": null,
+        "test_run": 51,
+        "rollout_run": 10,
+        "seed": 3849,
+        "full_meta_data": false,
+        "log_dir": "output/",
+        "n_logpoint": 50,
+        "maxFEs": 20000,
+        "run_time": "20250523T131522_bbob-10D_difficult",
+        "train_name": "20250523T131522_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250523T131522",
+        "rollout_log_dir": "output/rollout/20250523T131522",
+        "mgd_test_log_dir": "output/mgd_test/20250523T131522",
+        "mte_test_log_dir": "output/mte_test/20250523T131522",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10
+      },
+      "training_progress": {
+        "cur_checkpoint": 10
+      },
+      "optimizer": {},
+      "networks": {}
+    },
+    "NRLPSO": {
+      "agent_class": "metaevobox.baseline.metabbo.nrlpso.NRLPSO",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "NRLPSO",
+        "train_optimizer": "NRLPSO_Optimizer",
+        "agent_save_dir": "agent_model/train/NRLPSO/20250420T144519_bbob-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [
+          "CMAES",
+          "Random_search"
+        ],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250420T144519_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250420T144519_bbob-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250420T144519_bbob-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250420T144519_bbob-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250420T144519_bbob-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "n_state": 4,
+        "n_act": 4,
+        "gamma": 0.8,
+        "lr_model": 1,
+        "epsilon": null
+      },
+      "training_progress": {
+        "learning_time": 2712705,
+        "cur_checkpoint": 5
+      },
+      "optimizer": {},
+      "networks": {}
+    },
+    "QLPSO": {
+      "agent_class": "metaevobox.baseline.metabbo.qlpso.QLPSO",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "QLPSO",
+        "train_optimizer": "QLPSO_Optimizer",
+        "agent_save_dir": "agent_model/train/QLPSO/20250420T144203_bbob-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [
+          "CMAES",
+          "Random_search"
+        ],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250420T144203_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250420T144203_bbob-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250420T144203_bbob-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250420T144203_bbob-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250420T144203_bbob-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "n_state": 4,
+        "n_act": 4,
+        "lr_model": 1,
+        "alpha_decay": true,
+        "gamma": 0.8,
+        "epsilon": null,
+        "NP": 30,
+        "C": 1.49618,
+        "W": 0.729844
+      },
+      "training_progress": {
+        "learning_time": 11183200,
+        "cur_checkpoint": 14
+      },
+      "optimizer": {},
+      "networks": {}
+    },
+    "RLDAS": {
+      "agent_class": "metaevobox.baseline.metabbo.rldas.RLDAS",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "RLDAS",
+        "train_optimizer": "RLDAS_Optimizer",
+        "agent_save_dir": "agent_model/train/RLDAS/20250420T143534_bbob-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [
+          "CMAES",
+          "Random_search"
+        ],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250420T143534_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250420T143534_bbob-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250420T143534_bbob-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250420T143534_bbob-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250420T143534_bbob-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "optimizer": "Adam",
+        "lr": 1e-05,
+        "feature_dim": 9,
+        "optim_num": 3,
+        "gamma": 0.99,
+        "n_step": 10,
+        "K_epochs": null,
+        "eps_clip": 0.1,
+        "max_grad_norm": 0.1
+      },
+      "training_progress": {
+        "learning_time": 1050,
+        "cur_checkpoint": 7
+      },
+      "optimizer": {
+        "class": "Adam",
+        "param_groups": [
+          {
+            "lr": 1e-05,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          },
+          {
+            "lr": 1e-05,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          }
+        ]
+      },
+      "networks": {
+        "actor": {
+          "class": "Actor",
+          "structure": "Actor(\n  (embedders): ModuleList(\n    (0-5): 6 x Sequential(\n      (0): Linear(in_features=10, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=1, bias=True)\n      (3): ReLU()\n    )\n  )\n  (embedder_final): Sequential(\n    (0): Linear(in_features=15, out_features=64, bias=True)\n    (1): Tanh()\n  )\n  (model): Sequential(\n    (0): Linear(in_features=64, out_features=16, bias=True)\n    (1): Tanh()\n    (2): Linear(in_features=16, out_features=3, bias=True)\n    (3): Softmax(dim=None)\n  )\n)",
+          "n_parameters": 6729,
+          "n_trainable": 6729,
+          "children": {
+            "embedders": "ModuleList",
+            "embedder_final": "Sequential",
+            "model": "Sequential"
+          }
+        },
+        "critic": {
+          "class": "Critic",
+          "structure": "Critic(\n  (embedders): ModuleList(\n    (0-5): 6 x Sequential(\n      (0): Linear(in_features=10, out_features=64, bias=True)\n      (1): ReLU()\n      (2): Linear(in_features=64, out_features=1, bias=True)\n      (3): ReLU()\n    )\n  )\n  (embedder_final): Sequential(\n    (0): Linear(in_features=15, out_features=64, bias=True)\n    (1): Tanh()\n  )\n  (model): Sequential(\n    (0): Linear(in_features=64, out_features=16, bias=True)\n    (1): Tanh()\n    (2): Linear(in_features=16, out_features=1, bias=True)\n  )\n)",
+          "n_parameters": 6695,
+          "n_trainable": 6695,
+          "children": {
+            "embedders": "ModuleList",
+            "embedder_final": "Sequential",
+            "model": "Sequential"
+          }
+        }
+      }
+    },
+    "RLDEAFL": {
+      "agent_class": "metaevobox.baseline.metabbo.rldeafl.RLDEAFL",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "RLDEAFL",
+        "train_optimizer": "RLDEAFL_Optimizer",
+        "agent_save_dir": "agent_model/train/RLDEAFL/20250420T143631_bbob-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [
+          "CMAES",
+          "Random_search"
+        ],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250420T143631_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250420T143631_bbob-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250420T143631_bbob-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250420T143631_bbob-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250420T143631_bbob-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "optimizer": "Adam",
+        "lr": 0.0001,
+        "fe_hidden_dim": 64,
+        "fe_n_layers": 1,
+        "gamma": 0.99,
+        "n_step": 10,
+        "K_epochs": 3,
+        "eps_clip": 0.2,
+        "max_grad_norm": 1,
+        "mu_operator": 14,
+        "cr_operator": 3,
+        "n_mutation": 3,
+        "n_crossover": 2
+      },
+      "training_progress": {
+        "learning_time": 33600,
+        "cur_checkpoint": 14
+      },
+      "optimizer": {
+        "class": "Adam",
+        "param_groups": [
+          {
+            "lr": 0.0001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          },
+          {
+            "lr": 0.0001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          },
+          {
+            "lr": 0.0001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          }
+        ]
+      },
+      "networks": {
+        "actor": {
+          "class": "Actor",
+          "structure": "Actor(\n  (mutation_selector_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=80, out_features=32, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=32, out_features=14, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n  (crossover_selector_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=80, out_features=32, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=32, out_features=3, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n  (mutation_param_sigma_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=80, out_features=32, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=32, out_features=3, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n  (mutation_param_mu_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=80, out_features=32, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=32, out_features=3, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n  (crossover_param_sigma_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=80, out_features=32, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=32, out_features=2, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n  (crossover_param_mu_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=80, out_features=32, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=32, out_features=2, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n)",
+          "n_parameters": 16443,
+          "n_trainable": 16443,
+          "children": {
+            "mutation_selector_net": "MLP",
+            "crossover_selector_net": "MLP",
+            "mutation_param_sigma_net": "MLP",
+            "mutation_param_mu_net": "MLP",
+            "crossover_param_sigma_net": "MLP",
+            "crossover_param_mu_net": "MLP"
+          }
+        },
+        "critic": {
+          "class": "Critic",
+          "structure": "Critic(\n  (_Critic__value_head): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=80, out_features=16, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=16, out_features=8, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n      (layer1-activation): ReLU()\n      (layer2-linear): Linear(in_features=8, out_features=1, bias=True)\n      (layer2-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n)",
+          "n_parameters": 1441,
+          "n_trainable": 1441,
+          "children": {
+            "_Critic__value_head": "MLP"
+          }
+        },
+        "fe": {
+          "class": "Feature_Extractor",
+          "structure": "Feature_Extractor(\n  (embedder): EmbeddingNet(\n    (embedder): Linear(in_features=3, out_features=64, bias=False)\n  )\n  (fes_embedder): EmbeddingNet(\n    (embedder): Linear(in_features=1, out_features=16, bias=False)\n  )\n  (dimension_encoder): mySequential(\n    (0): MultiHeadEncoder(\n      (MHA_sublayer): MultiHeadAttentionsubLayer(\n        (MHA): MultiHeadAttention()\n        (Norm): Normalization()\n      )\n      (FFandNorm_sublayer): FFandNormsubLayer(\n        (FF): Sequential(\n          (0): Linear(in_features=64, out_features=16, bias=True)\n          (1): ReLU(inplace=True)\n          (2): Linear(in_features=16, out_features=64, bias=True)\n        )\n        (Norm): Normalization()\n      )\n    )\n  )\n  (individual_encoder): mySequential(\n    (0): MultiHeadEncoder(\n      (MHA_sublayer): MultiHeadAttentionsubLayer(\n        (MHA): MultiHeadAttention()\n        (Norm): Normalization()\n      )\n      (FFandNorm_sublayer): FFandNormsubLayer(\n        (FF): Sequential(\n          (0): Linear(in_features=64, out_features=16, bias=True)\n          (1): ReLU(inplace=True)\n          (2): Linear(in_features=16, out_features=64, bias=True)\n        )\n        (Norm): Normalization()\n      )\n    )\n  )\n)",
+          "n_parameters": 37232,
+          "n_trainable": 37232,
+          "children": {
+            "embedder": "EmbeddingNet",
+            "fes_embedder": "EmbeddingNet",
+            "dimension_encoder": "mySequential",
+            "individual_encoder": "mySequential"
+          }
+        }
+      }
+    },
+    "RLEPSO": {
+      "agent_class": "metaevobox.baseline.metabbo.rlepso.RLEPSO",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "RLEPSO",
+        "train_optimizer": "RLEPSO_Optimizer",
+        "agent_save_dir": "agent_model/train/RLEPSO/20250420T143710_bbob-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [
+          "CMAES",
+          "Random_search"
+        ],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250420T143710_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250420T143710_bbob-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250420T143710_bbob-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250420T143710_bbob-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250420T143710_bbob-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "feature_dim": 1,
+        "action_dim": 35,
+        "action_shape": [
+          35
+        ],
+        "n_step": 10,
+        "K_epochs": 3,
+        "eps_clip": 0.1,
+        "gamma": 0.999,
+        "max_sigma": 0.7,
+        "min_sigma": 0.01,
+        "lr": 1e-05,
+        "optimizer": "Adam",
+        "max_grad_norm": Infinity,
+        "w_decay": true,
+        "NP": 100
+      },
+      "training_progress": {
+        "learning_time": 14400,
+        "cur_checkpoint": 6
+      },
+      "optimizer": {
+        "class": "Adam",
+        "param_groups": [
+          {
+            "lr": 1e-05,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          },
+          {
+            "lr": 1e-05,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          }
+        ]
+      },
+      "networks": {
+        "actor": {
+          "class": "Actor",
+          "structure": "Actor(\n  (_Actor__mu_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=1, out_features=64, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=64, out_features=32, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n      (layer1-activation): ReLU()\n      (layer2-linear): Linear(in_features=32, out_features=35, bias=True)\n      (layer2-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n  (_Actor__sigma_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=1, out_features=64, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=64, out_features=32, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n      (layer1-activation): ReLU()\n      (layer2-linear): Linear(in_features=32, out_features=35, bias=True)\n      (layer2-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n)",
+          "n_parameters": 6726,
+          "n_trainable": 6726,
+          "children": {
+            "_Actor__mu_net": "MLP",
+            "_Actor__sigma_net": "MLP"
+          }
+        },
+        "critic": {
+          "class": "Critic",
+          "structure": "Critic(\n  (_Critic__value_head): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=1, out_features=16, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=16, out_features=8, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n      (layer1-activation): ReLU()\n      (layer2-linear): Linear(in_features=8, out_features=1, bias=True)\n      (layer2-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n)",
+          "n_parameters": 177,
+          "n_trainable": 177,
+          "children": {
+            "_Critic__value_head": "MLP"
+          }
+        }
+      }
+    },
+    "RLHPSDE": {
+      "agent_class": "metaevobox.baseline.metabbo.rlhpsde.RLHPSDE",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "RLHPSDE",
+        "train_optimizer": "RLHPSDE_Optimizer",
+        "agent_save_dir": "agent_model/train/RLHPSDE/20250420T143943_bbob-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [
+          "CMAES",
+          "Random_search"
+        ],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250420T143943_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250420T143943_bbob-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250420T143943_bbob-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250420T143943_bbob-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250420T143943_bbob-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "n_state": 4,
+        "n_act": 4,
+        "lr_model": 0.8,
+        "alpha_decay": false,
+        "gamma": 0.5,
+        "epsilon": null,
+        "F": 0.5,
+        "Cr": 0.5,
+        "NP_max": 180,
+        "NP_min": 4,
+        "Hm": 0.5,
+        "rw_steps": 200,
+        "step_size": 10
+      },
+      "training_progress": {
+        "learning_time": 8400,
+        "cur_checkpoint": 3
+      },
+      "optimizer": {},
+      "networks": {}
+    },
+    "RLPSO": {
+      "agent_class": "metaevobox.baseline.metabbo.rlpso.RLPSO",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "RLPSO",
+        "train_optimizer": "RLPSO_Optimizer",
+        "agent_save_dir": "agent_model/train/RLPSO/20250420T150031_bbob-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [
+          "CMAES",
+          "Random_search"
+        ],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250420T150031_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250420T150031_bbob-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250420T150031_bbob-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250420T150031_bbob-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250420T150031_bbob-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "feature_dim": 20,
+        "action_dim": 1,
+        "action_shape": [
+          1
+        ],
+        "max_sigma": 0.7,
+        "min_sigma": 0.01,
+        "gamma": 0.01,
+        "lr_model": 1e-05,
+        "optimizer": "Adam",
+        "max_grad_norm": Infinity,
+        "w_decay": true,
+        "c": 2.05,
+        "NP": 100
+      },
+      "training_progress": {
+        "learning_time": 9552000,
+        "cur_checkpoint": 12
+      },
+      "optimizer": {
+        "class": "Adam",
+        "param_groups": [
+          {
+            "lr": 1e-05,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          }
+        ]
+      },
+      "networks": {
+        "model": {
+          "class": "PolicyNetwork",
+          "structure": "PolicyNetwork(\n  (_PolicyNetwork__mu_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=20, out_features=32, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=32, out_features=8, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n      (layer1-activation): ReLU()\n      (layer2-linear): Linear(in_features=8, out_features=1, bias=True)\n      (layer2-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n  (_PolicyNetwork__sigma_net): MLP(\n    (net): Sequential(\n      (layer0-linear): Linear(in_features=20, out_features=32, bias=True)\n      (layer0-drop_out): Dropout(p=0, inplace=False)\n      (layer0-activation): ReLU()\n      (layer1-linear): Linear(in_features=32, out_features=8, bias=True)\n      (layer1-drop_out): Dropout(p=0, inplace=False)\n      (layer1-activation): ReLU()\n      (layer2-linear): Linear(in_features=8, out_features=1, bias=True)\n      (layer2-drop_out): Dropout(p=0, inplace=False)\n    )\n  )\n)",
+          "n_parameters": 1890,
+          "n_trainable": 1890,
+          "children": {
+            "_PolicyNetwork__mu_net": "MLP",
+            "_PolicyNetwork__sigma_net": "MLP"
+          }
+        }
+      }
+    },
+    "RNNOPT": {
+      "agent_class": "metaevobox.baseline.metabbo.rnnopt.RNNOPT",
+      "config": {
+        "train_problem": "bbob-torch-10D",
+        "test_problem": "bbob-torch-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "L2L",
+        "train_optimizer": "L2L_Optimizer",
+        "agent_save_dir": "agent_model/train/L2L/20250425T103904_bbob-torch-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250425T103904_bbob-torch-10D_difficult",
+        "test_log_dir": "output/test/20250425T103904_bbob-torch-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250425T103904_bbob-torch-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250425T103904_bbob-torch-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250425T103904_bbob-torch-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "lr": 1e-05,
+        "optimizer": "Adam",
+        "max_grad_norm": Infinity
+      },
+      "training_progress": {
+        "cur_checkpoint": 13
+      },
+      "optimizer": {
+        "class": "Adam",
+        "param_groups": [
+          {
+            "lr": 1e-05,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          }
+        ]
+      },
+      "networks": {
+        "net": {
+          "class": "LSTM",
+          "structure": "LSTM(12, 32, proj_size=10)",
+          "n_parameters": 3392,
+          "n_trainable": 3392
+        }
+      }
+    },
+    "SYMBOL": {
+      "agent_class": "metaevobox.baseline.metabbo.symbol.SYMBOL",
+      "config": {
+        "train_problem": "bbob-10D",
+        "test_problem": "bbob-10D",
+        "train_difficulty": "difficult",
+        "test_difficulty": "difficult",
+        "upperbound": 5,
+        "user_train_problem_list": null,
+        "user_test_problem_list": null,
+        "device": "cpu",
+        "train": true,
+        "test": null,
+        "rollout": null,
+        "run_experiment": null,
+        "mgd_test": null,
+        "mte_test": null,
+        "task_cnt": 10,
+        "generation": 250,
+        "full_meta_data": true,
+        "max_learning_step": 1000000000.0,
+        "train_batch_size": 16,
+        "train_agent": "SYMBOL",
+        "train_optimizer": "SYMBOL_Optimizer",
+        "agent_save_dir": "agent_model/train/SYMBOL/20250420T144303_bbob-10D_difficult/",
+        "log_dir": "output/",
+        "draw_interval": 3,
+        "agent_for_plot_training": [
+          "RL_HPSDE_Agent"
+        ],
+        "n_checkpoint": 20,
+        "resume_dir": null,
+        "train_parallel_mode": "dummy",
+        "agent": [],
+        "t_optimizer": [
+          "CMAES",
+          "Random_search"
+        ],
+        "test_batch_size": 1,
+        "parallel_batch": "Batch",
+        "agent_for_rollout": null,
+        "checkpoints_for_rollout": null,
+        "plot_smooth": 0.8,
+        "problem_from": null,
+        "problem_to": null,
+        "difficulty_from": "easy",
+        "difficulty_to": "easy",
+        "model_from": null,
+        "model_to": null,
+        "pre_train_rollout": null,
+        "scratch_rollout": null,
+        "max_epoch": 100,
+        "seed": 3849,
+        "epoch_seed": 100,
+        "id_seed": 5,
+        "train_mode": "single",
+        "end_mode": "epoch",
+        "test_run": 51,
+        "rollout_run": 10,
+        "no_tb": false,
+        "log_step": 50,
+        "maxFEs": 20000,
+        "n_logpoint": 50,
+        "run_time": "20250420T144303_bbob-10D_difficult",
+        "test_log_dir": "output/test/20250420T144303_bbob-10D_difficult/",
+        "rollout_log_dir": "output/rollout/20250420T144303_bbob-10D_difficult/",
+        "mgd_test_log_dir": "output/mgd_test/20250420T144303_bbob-10D_difficult/",
+        "mte_test_log_dir": "output/mte_test/20250420T144303_bbob-10D_difficult/",
+        "save_interval": 5,
+        "log_interval": 400,
+        "dim": 10,
+        "optimizer": "Adam",
+        "init_pop": "random",
+        "teacher": "MadDE",
+        "population_size": 100,
+        "boarder_method": "clipping",
+        "skip_step": 5,
+        "test_skip_step": 5,
+        "max_c": 1.0,
+        "min_c": -1.0,
+        "c_interval": 0.4,
+        "max_layer": 6,
+        "value_dim": 1,
+        "hidden_dim": 16,
+        "num_layers": 1,
+        "lr": 0.001,
+        "lr_critic": 0.001,
+        "max_grad_norm": Infinity,
+        "encoder_head_num": 4,
+        "decoder_head_num": 4,
+        "critic_head_num": 4,
+        "embedding_dim": 16,
+        "n_encode_layers": 1,
+        "normalization": "layer",
+        "hidden_dim1_critic": 32,
+        "hidden_dim2_critic": 16,
+        "hidden_dim1_actor": 32,
+        "hidden_dim2_actor": 8,
+        "output_dim_actor": 1,
+        "gamma": 0.99,
+        "K_epochs": 3,
+        "eps_clip": 0.1,
+        "n_step": 10,
+        "fea_dim": 9,
+        "require_baseline": false
+      },
+      "training_progress": {
+        "learning_time": 7200,
+        "cur_checkpoint": 15
+      },
+      "optimizer": {
+        "class": "Adam",
+        "param_groups": [
+          {
+            "lr": 0.001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          },
+          {
+            "lr": 0.001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "eps": 1e-08,
+            "weight_decay": 0,
+            "amsgrad": false,
+            "maximize": false,
+            "foreach": null,
+            "capturable": false,
+            "differentiable": false,
+            "fused": null
+          }
+        ]
+      },
+      "networks": {
+        "actor": {
+          "class": "LSTM",
+          "structure": "LSTM(\n  (lstm): LSTM(252, 16, batch_first=True)\n  (output_net): Linear(in_features=16, out_features=11, bias=True)\n  (x_to_c): Linear(in_features=9, out_features=16, bias=True)\n  (constval_net): Linear(in_features=16, out_features=4, bias=True)\n)",
+          "n_parameters": 17695,
+          "n_trainable": 17695,
+          "children": {
+            "lstm": "LSTM",
+            "output_net": "Linear",
+            "x_to_c": "Linear",
+            "constval_net": "Linear"
+          }
+        },
+        "critic": {
+          "class": "Critic",
+          "structure": "Critic(\n  (value_net): Linear(in_features=9, out_features=1, bias=True)\n)",
+          "n_parameters": 10,
+          "n_trainable": 10,
+          "children": {
+            "value_net": "Linear"
+          }
+        }
+      }
+    }
+  }
+}
